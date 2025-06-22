@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lukas Kahmann | Game Dev Portfolio – Beginner Puzzle Game</title>
+  <link rel="icon" href="../assets/logo.png" />
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/project-detail.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header"></header>
+  
+  <!-- Back-Arrow (fixiert, außerhalb des Panels) -->
+  <button class="back-arrow" onclick="window.location.href='../index.html'">
+    <i class="fas fa-arrow-left"></i>
+  </button>
+
+  <main>
+    <section class="project-detail-content">
+      <!-- Cover -->
+      <div class="project-detail-media">
+        <img src="../assets/beginner-puzzle-covershut.png" alt="Beginner Puzzle Game Cover" />
+      </div>
+
+      <!-- Titel + Info -->
+      <h1>Beginner Puzzle Game</h1>
+      <div class="project-detail-subtitle">
+        Ein Lernprojekt im Rahmen des Udemy-Kurses „Unreal Engine 5: The Complete Beginner’s Course“
+      </div>
+      <div class="project-detail-info">
+        <ul>
+          <li><strong>Projektart:</strong> Lernprojekt</li>
+          <li><strong>Rolle:</strong> Solo-Entwickler</li>
+          <li><strong>Engine:</strong> Unreal Engine 5</li>
+        </ul>
+      </div>
+      
+      <!-- Abschnitt: Kurzbeschreibung -->
+      <div class="project-detail-body">
+        <h3>Kurzbeschreibung</h3>
+        <p>
+          Im Rahmen meines Einstiegs in die Spieleentwicklung mit Unreal Engine 5 habe ich den Kurs „The Complete Beginner’s Course“ auf Udemy absolviert. Ziel des Kurses war es, grundlegende Spielmechaniken praktisch zu lernen, indem man ein kleines Puzzle-Game mit Blueprints erstellt. Im Projektverlauf habe ich verschiedene grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events, sowie Sieg- und Verlustzustände umgesetzt – alles auf Basis des Third-Person-Templates von Unreal.
+        </p>
+        
+        <h3>Lernziele und Hintergrund</h3>
+        <p>
+          Dieses Projekt war mein erster Berührungspunkt mit Unreal Engine 5. Mein Ziel war es, durch Nachbauen eines bestehenden Kursprojekts zu verstehen, wie einfache Spiele aufgebaut sind – und welche Bausteine notwendig sind, um einen kleinen, aber funktionalen Level zu entwickeln. Dabei konnte ich sowohl die Funktionsweise der Blueprints als auch das Verhalten von Spielobjekten, Kollisionen und Triggern besser nachvollziehen.
+        </p>
+
+        <h3>Spielablauf</h3>
+        <p>
+          Das Spielziel ist simpel: Der Spieler startet am Beginn eines linearen Korridors und muss am Ende eine verschlossene Tür erreichen. Diese Tür lässt sich jedoch erst öffnen, wenn der Spieler zuvor drei leuchtende Sphären eingesammelt hat.
+        </p>
+        <p>
+          Der Pfad zur Tür ist dabei durch mehrere Herausforderungen unterbrochen:
+        </p>
+        
+        <ul>
+          <li>
+            <strong>Eine Feuerbarriere blockiert den Weg</strong> (Effekt: Starter Content Material)
+            <div class="project-placeholder-img">
+              <span>Screenshot Feuerhindernis</span>
+            </div>
+          </li>
+          <li>
+            <strong>Vertikal bewegende Plattformen müssen überquert werden, um einen Abgrund zu überwinden</strong>
+            <div class="project-placeholder-img">
+              <span>GIF: Spieler springt über Plattformen</span>
+            </div>
+          </li>
+          <li>
+            <strong>Gefährliche Kugeln (Spheres) bewegen sich auf den Spieler zu und fügen Schaden zu, wenn sie berührt werden.</strong>
+            <div class="project-placeholder-img">
+              <span>GIF: HP-Bar sinkt bei Berührung</span>
+            </div>
+          </li>
+          <li>
+            Sinkt die Lebensanzeige (Health Bar) des Spielers auf null oder fällt er ins Leere, erscheint ein Game Over Screen mit der Möglichkeit, das Spiel neu zu starten oder zu beenden.
+          </li>
+          <li>
+            Vor der finalen Tür gibt es vier kleine, identisch aussehende Häuschen. In einem von ihnen befindet sich die letzte Sphäre. Nur wenn alle drei gesammelt wurden, erhält der Spieler Zugriff auf die Tür – andernfalls erscheint eine Meldung, dass noch eine Kugel fehlt.
+            <div class="project-placeholder-img">
+              <span>GIF: Meldung + Finden der dritten Sphäre</span>
+            </div>
+          </li>
+          <li>
+            Nach dem erfolgreichen Durchschreiten der Tür erscheint ein Victory Screen mit denselben Optionen wie beim Game Over.
+          </li>
+        </ul>
+        
+        <h3>Umgesetzte Features</h3>
+        <ul>
+          <li>Health-System mit UI-basierter Health Bar</li>
+          <li>Trigger-basierter Schaden durch Kollision mit Gegnerobjekten</li>
+          <li>Spieler-Feedback über Text-Meldungen und HUD</li>
+          <li>Sieg- und Verlustbildschirme mit Navigationsoptionen</li>
+          <li>Bewegliche Plattformen und Hindernisse mit Timelines</li>
+          <li>Objektbasierte Interaktion zur Türöffnung basierend auf eingesammelten Sphären</li>
+          <li>Verwendung des Unreal Starter Contents für visuelle Effekte</li>
+        </ul>
+        
+        <h3>Reflektion</h3>
+        <p>
+          Auch wenn dieses Projekt inhaltlich stark vom Kurs vorgegeben war, konnte ich die einzelnen Mechaniken vertiefen, modifizieren und verstehen. Es diente mir als wichtige Grundlage für eigene Spielideen und half mir dabei, mich mit Blueprints, Event Handling und UI-Logik in Unreal vertraut zu machen. Gerade der strukturierte Aufbau und das wiederholte Testing kleiner Elemente waren hier entscheidend für meinen Lernerfolg.
+        </p>
+      </div>
+    </section>
+  </main>
+  
+  <footer id="footer"></footer>
+  <script src="../js/includes.js"></script>
+</body>
+</html>

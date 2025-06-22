@@ -38,14 +38,30 @@ header {
   height: 96px;
   padding: 0 40px;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
+  background: var(--primary);
 }
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+}
+.nav-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  border: 2.5px solid #fff;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.09);
+}
+
 .nav-left, .nav-center, .nav-right {
   display: flex;
   align-items: center;
   height: 100%;
 }
-.nav-left { flex: 1 1 0; justify-content: flex-start; }
+.nav-left { flex: 1 1 0; justify-content: flex-start; margin-right: 40px; }
 .nav-center {
   flex: 0 0 500px;
   justify-content: center;
@@ -93,11 +109,11 @@ header {
 .nav-right {
   flex: 1 1 0;
   justify-content: flex-end;
-  gap: 26px;
+  gap: 30px;
+  margin-left: 32px;
 }
 .nav-right a {
   color: var(--bg);
-  margin-left: 20px;
   font-size: 1.35rem;
   opacity: 0.88;
   transition: opacity 0.2s, color 0.2s;
@@ -109,6 +125,9 @@ header {
 }
 
 /* Projects Grid (2x2, große Cards!) */
+.projects-section {
+  padding: 52px 0 36px 0;
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -125,9 +144,10 @@ header {
   box-shadow: 0 4px 24px rgba(0,0,0,0.13);
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.14s, box-shadow 0.14s;
   cursor: pointer;
-  text-decoration: none;
 }
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
@@ -135,7 +155,7 @@ header {
 }
 .project-media {
   width: 100%;
-  height: 400px;
+  height: 240px;
   background: #111;
   display: flex;
   align-items: center;
@@ -163,6 +183,8 @@ header {
   opacity: 0.99;
   letter-spacing: 0.3px;
   text-shadow: 0 2px 12px rgba(0,0,0,0.19);
+  margin: 0;
+  text-align: left;
 }
 
 footer {
@@ -212,7 +234,10 @@ footer {
 @media (max-width: 700px) {
   .site-title { font-size: 1.3rem; }
   .projects-grid { gap: 8px; }
+  .nav-logo { width: 36px; height: 36px; }
+  .navbar { padding: 0 8px; }
 }
 @media (max-width: 520px) {
   .projects-grid { max-width: 99vw; }
+  .nav-logo { width: 30px; height: 30px; }
 }
