@@ -1,21 +1,23 @@
 async function includeHTML() {
-  for (const id of ['header', 'footer']) {
-    const el = document.getElementById(id);
-    if (el) {
-      let file = '/partials/' + id + '.html';
-      // Erkenne, ob wir in /projects/ sind
-      if (window.location.pathname.includes('/projects/')) {
-        file = '../partials/' + id + '.html';
-      }
-      try {
-        const resp = await fetch(file);
-        if (resp.ok) {
-          el.innerHTML = await resp.text();
-        }
-      } catch (e) {
-        el.innerHTML = `<div style="color:red;">Include "${file}" not found.</div>`;
-      }
+  // Header
+  const headerEl = document.getElementById('header');
+  if (headerEl) {
+    let headerFile = 'partials/header.html';
+    if (window.location.pathname.includes('/projects/')) {
+      headerFile = '../partials/header-projects.html';
     }
+    const resp = await fetch(headerFile);
+    headerEl.innerHTML = await resp.text();
+  }
+  // Footer (bleibt identisch)
+  const footerEl = document.getElementById('footer');
+  if (footerEl) {
+    let footerFile = 'partials/footer.html';
+    if (window.location.pathname.includes('/projects/')) {
+      footerFile = '../partials/footer.html';
+    }
+    const resp = await fetch(footerFile);
+    footerEl.innerHTML = await resp.text();
   }
 }
 window.addEventListener('DOMContentLoaded', includeHTML);
