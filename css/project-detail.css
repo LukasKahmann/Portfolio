@@ -104,12 +104,16 @@
   color: var(--bg);
   border: none;
   border-radius: 6px;
-  font-size: 1.09rem;
+  font-size: 1.2rem;
   padding: 8px 22px;
   margin-bottom: 24px;
   margin-right: auto;
   cursor: pointer;
   transition: background 0.15s;
+  display: inline-block;
+}
+.back-to-projects i {
+  font-size: 1.28rem;
 }
 .back-to-projects:hover {
   background: var(--accent);

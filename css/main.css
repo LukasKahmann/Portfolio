@@ -60,6 +60,12 @@ header {
   color: var(--bg);
   pointer-events: auto;
   background: transparent;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.site-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
