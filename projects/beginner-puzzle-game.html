@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lukas Kahmann | Game Dev Portfolio – Bug Shooter</title>
+  <title>Lukas Kahmann | Game Dev Portfolio – Beginner Puzzle Game</title>
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../css/main.css"/>
   <link rel="stylesheet" href="../css/project-detail.css"/>
@@ -13,14 +13,8 @@
 </head>
 <body>
   <header id="header"></header>
-  
-  <!-- Back-Arrow (fixiert, außerhalb des Panels) -->
-  <!-- <button class="back-arrow" onclick="window.location.href='../index.html'">
-    <i class="fas fa-arrow-left"></i>
-  </button> -->
 
   <main>
-    <main class="project-main">
     <section class="project-hero">
       <img src="../assets/beginner-puzzle-covershot.png" alt="Beginner Puzzle Game Cover" class="project-image">
       <div class="project-title-box">
@@ -28,25 +22,25 @@
         <span class="project-role">Gameplay Programmer</span>
       </div>
     </section>
-    <section class="project-info-section">
-      <div class="project-about card">
-        <h2>Über das Projekt</h2>
-        <p>
-          Im Rahmen meines Einstiegs in die Spieleentwicklung mit Unreal Engine 5 habe ich den Kurs „The Complete Beginner’s Course“ auf Udemy absolviert. Ziel des Kurses war es, grundlegende Spielmechaniken praktisch zu lernen, indem man ein kleines Puzzle-Game mit Blueprints erstellt. Im Projektverlauf habe ich verschiedene grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events, sowie Sieg- und Verlustzustände umgesetzt – alles auf Basis des Third-Person-Templates von Unreal.
-        </p>
-      </div>
-      <div class="project-details card">
-        <h2>Projektinfo</h2>
-        <div class="project-info-row"><i class="fa-solid fa-user-gear"></i> Rolle: Gameplay-Programmierer</div>
-        <div class="project-info-row"><i class="fa-solid fa-users"></i> Teamgröße: 1</div>
-        <div class="project-info-row"><i class="fa-solid fa-microchip"></i> Engine: SDL 2 (C++)</div>
-        <div class="project-info-row"><i class="fa-solid fa-circle-check"></i> Status: Abgeschlossen</div>
-      </div>
-    </section>
-  </main>
 
-      <!-- Abschnitt: Kurzbeschreibung -->
-      <div class="project-detail-body card">     
+    <!-- NEUES LAYOUT -->
+    <div class="project-detail-layout">
+      <section class="project-info-row">
+        <div class="project-about card">
+          <h2>Über das Projekt</h2>
+          <p>
+            Im Rahmen meines Einstiegs in die Spieleentwicklung mit Unreal Engine 5 habe ich den Kurs „The Complete Beginner’s Course“ auf Udemy absolviert. Ziel des Kurses war es, grundlegende Spielmechaniken praktisch zu lernen, indem man ein kleines Puzzle-Game mit Blueprints erstellt. Im Projektverlauf habe ich verschiedene grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events, sowie Sieg- und Verlustzustände umgesetzt – alles auf Basis des Third-Person-Templates von Unreal.
+          </p>
+        </div>
+        <div class="project-details card">
+          <h2>Projektinfo</h2>
+          <div class="project-info-row"><i class="fa-solid fa-user-gear"></i> Rolle: Gameplay-Programmierer</div>
+          <div class="project-info-row"><i class="fa-solid fa-users"></i> Teamgröße: 1</div>
+          <div class="project-info-row"><i class="fa-solid fa-microchip"></i> Engine: Unreal Engine 5 (Blueprints)</div>
+          <div class="project-info-row"><i class="fa-solid fa-circle-check"></i> Status: Abgeschlossen</div>
+        </div>
+      </section>
+      <div class="project-detail-body card">
         <h3>Lernziele und Hintergrund</h3>
         <p>
           Dieses Projekt war mein erster Berührungspunkt mit Unreal Engine 5. Mein Ziel war es, durch Nachbauen eines bestehenden Kursprojekts zu verstehen, wie einfache Spiele aufgebaut sind – und welche Bausteine notwendig sind, um einen kleinen, aber funktionalen Level zu entwickeln. Dabei konnte ich sowohl die Funktionsweise der Blueprints als auch das Verhalten von Spielobjekten, Kollisionen und Triggern besser nachvollziehen.
@@ -59,7 +53,7 @@
         <p>
           Der Pfad zur Tür ist dabei durch mehrere Herausforderungen unterbrochen:
         </p>
-        
+
         <ul>
           <li>
             <strong>Eine Feuerbarriere blockiert den Weg</strong> (Effekt: Starter Content Material)
@@ -92,7 +86,7 @@
             Nach dem erfolgreichen Durchschreiten der Tür erscheint ein Victory Screen mit denselben Optionen wie beim Game Over.
           </li>
         </ul>
-        
+
         <h3>Umgesetzte Features</h3>
         <ul>
           <li>Health-System mit UI-basierter Health Bar</li>
@@ -103,15 +97,15 @@
           <li>Objektbasierte Interaktion zur Türöffnung basierend auf eingesammelten Sphären</li>
           <li>Verwendung des Unreal Starter Contents für visuelle Effekte</li>
         </ul>
-        
+
         <h3>Reflektion</h3>
         <p>
           Auch wenn dieses Projekt inhaltlich stark vom Kurs vorgegeben war, konnte ich die einzelnen Mechaniken vertiefen, modifizieren und verstehen. Es diente mir als wichtige Grundlage für eigene Spielideen und half mir dabei, mich mit Blueprints, Event Handling und UI-Logik in Unreal vertraut zu machen. Gerade der strukturierte Aufbau und das wiederholte Testing kleiner Elemente waren hier entscheidend für meinen Lernerfolg.
         </p>
       </div>
-    </section>
+    </div>
   </main>
-  
+
   <footer id="footer"></footer>
   <script src="../js/includes.js"></script>
 </body>
