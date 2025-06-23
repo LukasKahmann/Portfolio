@@ -1,0 +1,135 @@
+:root {
+  --primary: #cfdbd5;
+  --bg: #242423;
+  --accent: #f5cb5c;
+  --nav-height: 96px;
+  --logo-size: 50px;
+  --nav-gap-from-center: 1000px; /* NAV Abstand von der Mitte (anpassen nach Wunsch!) */
+  --nav-icon-size: 2rem;   /* Größe der Social-Icons */
+  --nav-title-size: 2.75rem;   /* Größe vom Namen */
+  --nav-link-size: 1.5rem;   /* Größe der Links (Projects, About etc.) */
+}
+
+/* --- NAVBAR GRUNDSTRUKTUR --- */
+header {
+  background: var(--primary);
+  height: var(--nav-height);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  min-width: 100vw;
+}
+.navbar {
+  position: relative;
+  width: 100vw;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  background: var(--primary);
+  box-sizing: border-box;
+}
+
+/* --- LOGO GANZ LINKS --- */
+.nav-logo-container {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.nav-logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  border: 2.5px solid #fff;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.09);
+}
+
+/* --- LINKS-LISTE (LEFT VON DER MITTE) --- */
+.nav-links.nav-left {
+  position: absolute;
+  right: calc(50% + var(--nav-gap-from-center));
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 34px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links.nav-left li a {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--nav-link-size);
+  letter-spacing: 0.5px;
+  opacity: 0.89;
+  transition: opacity 0.2s, border-bottom 0.2s;
+}
+.nav-links.nav-left li a:hover,
+.nav-links.nav-left li.active a {
+  border-bottom: 2.5px solid var(--accent);
+  opacity: 1;
+}
+
+/* --- NAME EXAKT MITTIG --- */
+.nav-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+}
+.site-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: var(--nav-title-size);
+  letter-spacing: 2px;
+  color: var(--bg);
+  background: transparent;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.site-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* --- SOCIALS (RECHTS VON DER MITTE) --- */
+.nav-right {
+  position: absolute;
+  left: calc(50% + var(--nav-gap-from-center));
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-right a {
+  color: var(--bg);
+  font-size: var(--nav-icon-size);
+  opacity: 0.88;
+  transition: opacity 0.2s, color 0.2s;
+}
+.nav-right a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* --- RESPONSIVE FÜR KLEINE DISPLAYS --- */
+@media (max-width: 900px) {
+  :root { --nav-height: 68px; --logo-size: 30px; --nav-gap-from-center: 120px; }
+  .site-title { font-size: 1.2rem; }
+  .nav-links.nav-left { gap: 18px; }
+  .nav-right { gap: 14px; }
+}
+@media (max-width: 600px) {
+  :root { --nav-gap-from-center: 52px; }
+  .site-title { font-size: 1.01rem; }
+  .nav-links.nav-left { gap: 9px; }
+  .nav-logo { width: 22px; height: 22px; }
+}

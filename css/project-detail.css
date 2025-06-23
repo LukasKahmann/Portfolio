@@ -1,3 +1,77 @@
+/* Hauptbereich auf der Projektseite */
+.project-main {
+  max-width: 1200px;   /* statt 900px */
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.project-hero {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  object-fit: cover;
+  max-height: 320px;
+}
+
+.project-title-box {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  background: rgba(24,24,24,0.7);
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.project-title-box h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: var(--accent);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-role {
+  font-size: 1.1rem;
+  color: #a0b1b6;
+}
+
+/* About/Projektinfo-Grid */
+.project-info-section {
+  display: flex;
+  gap: 24px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.project-info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 7px;
+  font-size: 1.07rem;
+}
+.project-info-row i {
+  color: var(--accent);
+  min-width: 22px;
+  font-size: 1.2rem;
+}
+.card {
+  background: #232323;
+  border-radius: 10px;
+  padding: 24px 22px 18px 22px;
+  flex: 1 1 320px;
+  min-width: 280px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 14px 0 rgba(0,0,0,0.15);
+}
+
 .project-detail-content {
   max-width: 980px;
   margin: 60px auto;
@@ -134,6 +208,18 @@
   font-weight: 600;
   opacity: 0.8;
 }
+
+.project-detail-body.card {
+  max-width: 980px;
+  margin: 36px auto 0 auto;
+  padding: 38px 32px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  text-align: left;
+  color: var(--text-main);
+}
+
 
 /* Responsive */
 @media (max-width: 900px) {

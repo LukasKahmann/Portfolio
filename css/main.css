@@ -7,10 +7,6 @@
   --white: #fff;
   --text-main: #e8eddf;
   --text-light: #cfdbd5;
-
-  --nav-height: 96px;
-  --logo-size: 50px;
-  --nav-gap: 36px;
 }
 
 body {
@@ -19,113 +15,6 @@ body {
   background: var(--bg);
   color: var(--text-main);
   min-height: 100vh;
-}
-
-/* === NAVBAR STRUKTUR === */
-header {
-  background: var(--primary);
-  height: var(--nav-height);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  width: 100vw;
-}
-
-.navbar {
-  width: 100vw;
-  max-width: 100vw;
-  height: var(--nav-height);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  box-sizing: border-box;
-  background: var(--primary);
-}
-
-.nav-logo-container {
-  flex: 0 0 auto;
-  margin-left: 16px;
-  margin-right: 20px;
-  height: var(--nav-height);
-  display: flex;
-  align-items: center;
-}
-.nav-logo {
-  width: var(--logo-size);
-  height: var(--logo-size);
-  border-radius: 50%;
-  object-fit: cover;
-  background: #eee;
-  border: 2.5px solid #fff;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.09);
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: var(--bg);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: 0.5px;
-  opacity: 0.89;
-  transition: opacity 0.2s, border-bottom 0.2s;
-}
-.nav-links a:hover,
-.nav-links .active a {
-  border-bottom: 2.5px solid var(--accent);
-  opacity: 1;
-}
-
-.nav-center-absolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  z-index: 10;
-  pointer-events: auto;
-}
-.site-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 2.1rem;
-  letter-spacing: 2px;
-  color: var(--bg);
-  background: transparent;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-.site-title:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.nav-right {
-  position: absolute;
-  right: 30px;
-  top: 0;
-  height: var(--nav-height);
-  display: flex;
-  align-items: center;
-  gap: 26px;
-}
-.nav-right a {
-  color: var(--bg);
-  font-size: 1.35rem;
-  opacity: 0.88;
-  transition: opacity 0.2s, color 0.2s;
-}
-.nav-right a:hover {
-  color: var(--accent);
-  opacity: 1;
 }
 
 /* === PROJEKT-KARTEN, HERO, ETC (Dein Restliches Design) === */
@@ -271,68 +160,10 @@ body {
   margin: 0;
 }
 
-/* Hauptbereich auf der Projektseite */
-.project-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
 
-.project-hero {
-  position: relative;
-  margin-bottom: 24px;
-}
-
-.project-image {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  display: block;
-  object-fit: cover;
-  max-height: 320px;
-}
-
-.project-title-box {
-  position: absolute;
-  left: 30px;
-  bottom: 20px;
-  background: rgba(24,24,24,0.7);
-  border-radius: 8px;
-  padding: 10px 20px;
-}
-
-.project-title-box h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  color: #67d7c4;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.project-role {
-  font-size: 1.1rem;
-  color: #a0b1b6;
-}
-
-/* About/Projektinfo-Grid */
-.project-info-section {
-  display: flex;
-  gap: 24px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-.card {
-  background: #232323;
-  border-radius: 10px;
-  padding: 24px 22px 18px 22px;
-  flex: 1 1 320px;
-  min-width: 280px;
-  box-sizing: border-box;
-  box-shadow: 0 3px 14px 0 rgba(0,0,0,0.15);
-}
 
 .project-about h2,
 .project-details h2 {
   font-size: 1.3rem;
   margin
+}
