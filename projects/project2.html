@@ -12,37 +12,34 @@
 <body>
 <header id="header"></header>
 
-<main>
-  <div class="project-detail-content">
-    <a class="back-to-projects" href="../index.html" title="Zurück zu den Projekten">
-      <i class="fas fa-arrow-left"></i>
-    </a>
-    <h1>Projekt 2</h1>
-    <div class="project-detail-subtitle">Coming Soon</div>
-    <div class="project-detail-media">
-      <img src="../assets/placeholder.png" alt="Projekt 2">
-    </div>
-    <div class="project-detail-columns">
-      <div class="project-detail-about">
-        <h3>Kurzbeschreibung</h3>
-        <p>Beschreibung für das Projekt 2 folgt bald.</p>
+<main class="project-main">
+    <section class="project-hero">
+      <img src="../assets/beginner-puzzle-covershot.png" alt="Screenshot von Bug Shooter" class="project-image">
+      <div class="project-title-box">
+        <h1><i class="fa-solid fa-bug"></i> Bug Shooter</h1>
+        <span class="project-role">Gameplay Programmer</span>
       </div>
-      <div class="project-detail-info">
-        <h3>Projekt Info</h3>
+    </section>
+    <section class="project-info-section">
+      <div class="project-about card">
+        <h2>Über das Projekt</h2>
+        <p>
+          Bug Shooter wurde ursprünglich als benotetes Projekt im Rahmen eines FutureGames-Kurses gestartet.
+          Danach habe ich das Projekt weiterentwickelt, unter anderem mit einer zweiten räumlichen Datenstruktur
+          zum Vergleich der Ergebnisse und einem Hintergrundgenerator, der auf dem Wave Function Collapse-Algorithmus basiert.
+        </p>
+      </div>
+      <div class="project-details card">
+        <h2>Projektinfo</h2>
         <ul>
-          <li><i class="fas fa-user"></i> Rolle: --</li>
-          <li><i class="fas fa-users"></i> Teamgröße: --</li>
-          <li><i class="fas fa-wrench"></i> Engine: --</li>
-          <li><i class="fas fa-book"></i> Projektart: --</li>
+          <li><i class="fa-solid fa-user-gear"></i> Rolle: Gameplay-Programmierer</li>
+          <li><i class="fa-solid fa-users"></i> Teamgröße: 1</li>
+          <li><i class="fa-solid fa-clock"></i> Zeitraum: 6 Wochen</li>
+          <li><i class="fa-solid fa-microchip"></i> Engine: SDL 2 (C++)</li>
         </ul>
       </div>
-    </div>
-    <div class="project-detail-body">
-      <h3>Weitere Infos</h3>
-      <p>Mehr Infos demnächst!</p>
-    </div>
-  </div>
-</main>
+    </section>
+  </main>
 
 <footer id="footer"></footer>
 <script src="../js/includes.js"></script>
