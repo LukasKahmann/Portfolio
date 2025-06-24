@@ -1,49 +1,73 @@
+:root {
+  --primary: #cfdbd5;
+  --bg: #242423;
+  --bg-light: #e8eddf;
+  --card-bg: #333533;
+  --accent: #f5cb5c;
+  --white: #fff;
+  --text-main: #e8eddf;
+  --text-light: #cfdbd5;
+  --nav-height: 96px;
+  --logo-size: 50px;
+  --nav-gap: 36px;
+  --body-font-size: 1.15rem;
+}
+
 .projects-hero {
   position: relative;
-  height: 80vh;
-  min-height: 450px;
-  max-height: 900px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 40vh;  /* oder wie du es bisher hattest */
+  min-height: 350px;
   overflow: hidden;
 }
+
 .hero-bg {
-  background-image: url('../assets/hero-placeholder.jpg'); /* Passe Bildpfad ggf. an */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  filter: brightness(0.5) blur(0.5px);
-  width: 100%;
-  height: 100%;
   position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('../assets/hero-placeholder.jpg') center center/cover no-repeat;
   z-index: 1;
 }
 .hero-overlay {
   position: absolute;
-  width: 100%; height: 100%;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(36,36,35,0.67) 0%, rgba(36,36,35,0.94) 100%);
   z-index: 2;
-  background: linear-gradient(to bottom, rgba(40,44,50,0.7) 0%, rgba(40,44,50,0.03) 80%, rgba(40,44,50,0.0) 100%);
 }
-.hero-content {
-  position: relative;
+.hero-content,
+.projects-hero-text {
+  position: fixed; /* oder absolute, wenn du das lieber magst */
+  top: 20vh;  /* positioniere etwas nach unten */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   text-align: center;
-  color: #fff;
+  width: 100vw;
+  pointer-events: none;
 }
-.hero-content h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.7rem;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
+.hero-content h1,
+.projects-hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0 0 16px 0;
+  letter-spacing: 0.04em;
+  transition: opacity 0.25s;
 }
-.hero-content p {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #e8eddf;
+.hero-content p,
+.projects-hero-text p {
+  font-size: 1.4rem;
+  color: var(--primary, #cfdbd5);
   opacity: 0.93;
+  margin: 0;
+  font-weight: 400;
+  transition: opacity 0.25s;
 }
+@media (max-width: 600px) {
+  .hero-content h1,
+  .projects-hero-text h1 { font-size: 2.2rem; }
+  .hero-content p,
+  .projects-hero-text p { font-size: 1.05rem; }
+}
+
 
 .projects-list-section {
   background: transparent;

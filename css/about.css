@@ -455,4 +455,53 @@ blockquote {
   .about-main-panel { padding: 22px 6vw 24px 6vw;}
 }
 
+.about-course-timeline {
+  margin: 28px 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent, #f5cb5c);
+}
+.course-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+.course-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent, #f5cb5c);
+  margin-top: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+.course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.course-title {
+  font-weight: 600;
+  color: var(--text-main, #e8eddf);
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+}
+.course-platform {
+  font-size: 0.98rem;
+  color: var(--accent, #f5cb5c);
+  margin-top: 0;
+  font-weight: 500;
+  opacity: 0.94;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 600px) {
+  .about-course-timeline { padding-left: 6px; }
+  .course-title { font-size: 0.98rem; }
+  .course-dot { width: 12px; height: 12px; }
+}
+
+
 
