@@ -1,3 +1,7 @@
+:root {
+  --body-font-size: 1.3rem;
+}
+
 /* Hauptbereich auf der Projektseite */
 .project-main {
   max-width: 1200px;
@@ -13,10 +17,10 @@
 
 .project-image {
   width: 100%;
+  height: 100%;
   border-radius: 10px 10px 0 0;
   display: block;
   object-fit: cover;
-  max-height: 320px;
 }
 
 .project-title-box {
@@ -59,13 +63,8 @@
   width: 100%;
   margin-top: 16px;
 }
-
-.project-about.card,
-.project-details.card {
-  max-width: 1200px;
-  box-sizing: border-box;
-}
-
+.project-about.card  { flex: 7 1 0; min-width: 220px; }
+.project-details.card { flex: 3 1 0; min-width: 180px; }
 /* Cards */
 .card {
   background: #232323;
@@ -91,7 +90,6 @@
   color: var(--text-main);
 }
 
-/* Body-Inhalte */
 .project-detail-body h3 {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -103,7 +101,7 @@
 }
 .project-detail-body p,
 .project-detail-body ul {
-  font-size: 1.10rem;
+  font-size: var(--body-font-size);
   color: var(--text-light);
   line-height: 1.7;
   margin-bottom: 18px;
@@ -120,61 +118,83 @@
   color: var(--accent);
   text-decoration: underline;
 }
+.card p,
+.card ul {
+  font-size: var(--body-font-size);
+}
 
 /* Projekt-Info-Kasten */
 .project-info-row .project-info-row {
   gap: 12px;
   margin-bottom: 7px;
-  font-size: 1.07rem;
+  font-size: var(--body-font-size);
 }
 .project-info-row i {
   color: var(--accent);
   min-width: 22px;
-  font-size: 1.2rem;
+  font-size: var(--body-font-size);
 }
 
-/* Platzhalter-Bilder für die Erklärgrafiken/GIFs */
-.project-placeholder-img {
+
+/* Projekt Body Media */
+.project-body-media-double {
+  display: flex;
+  gap: 30px;
+  max-width: 1300px;   /* oder 900px, was auch immer dein Fließtext als max-width hat! */
+  margin: 30px auto 20px auto;
+  padding: 0;
+  justify-content: center;
+}
+
+.project-body-media-double img,
+.project-body-media-double video {
+  flex: 1 1 0;               /* Jeder bekommt gleich viel Platz! */
   width: 100%;
-  max-width: 370px;
-  aspect-ratio: 16/9;
-  background: #e8eddf;
-  border: 2px dashed #f5cb5c;
-  border-radius: 12px;
-  margin: 12px 0 18px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 100%;
+  height: 350px;              /* Oder Wunschhöhe */
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.13);
+  background: #232323;
+  display: block;
 }
-.project-placeholder-img span {
-  color: #333533;
-  font-size: 1.05rem;
-  font-weight: 600;
-  opacity: 0.8;
+@media (max-width: 900px) {
+  .project-body-media-double {
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 5vw;
+  }
+  .project-body-media-double img,
+  .project-body-media-double video {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+.project-body-media-single {
+  width: 70%;
+  min-width: 320px;
+  max-width: 850px;
+  margin: 40px auto 36px auto;
+  padding: 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Back-Arrow */
-.back-arrow {
-  position: fixed;
-  top: 35px;
-  left: 35px;
-  z-index: 9999;
-  background: #333533;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  box-shadow: 0 3px 18px rgba(0,0,0,0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: background 0.14s;
+.project-body-media-single img,
+.project-body-media-single video {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.13);
+  display: block;
+  background: #232323;
 }
-.back-arrow:hover {
-  background: #f5cb5c;
-  color: #242423;
+@media (max-width: 900px) {
+  .project-body-media-single {
+    width: 98%;
+    max-width: 99vw;
+    padding: 0 5vw;
+  }
 }
-

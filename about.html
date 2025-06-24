@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lukas Kahmann | Game Dev Portfolio – About</title>
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="css/main.css"/>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/about.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Über mich | Lukas Kahmann</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
-<header id="header"></header>
-
-<main>
-  <section class="about-section section container">
-    <div class="about-wrapper">
-      <div class="about-headshot-container">
-        <img src="assets/headshot.jpg" class="about-headshot" alt="Lukas Kahmann Headshot">
+  <div id="header"></div>
+  <main>
+    <section class="about-outer-grid">
+      <!-- Bild links -->
+      <div class="about-profile-outer">
+        <img src="assets/logo.png" class="about-profile-img" alt="Lukas Kahmann Profilbild">
+        <div class="about-label">Lukas Kahmann</div>
       </div>
-      <div class="about-content">
-        <h2>About</h2>
-        <p class="about-text">
-          Ich bin Lukas Kahmann, Entwickler und leidenschaftlicher Gamer.<br><br>
-          Schon seit meiner Kindheit faszinieren mich Videospiele – erst vor allem als Spieler, später immer stärker als Entwickler.<br><br>
-          Während meines dualen Informatikstudiums an der Ostfalia Hochschule für angewandte Wissenschaften habe ich mich intensiv mit den vielfältigen Facetten des Software Engineerings beschäftigt. Dabei konnte ich praktische Erfahrungen in verschiedenen Programmiersprachen wie Java, JavaScript, C#, C, C++ und Python sammeln. Bereits während des Studiums war ich in mehreren RPA-Projekten (Robotic Process Automation) tätig, in denen ich sowohl technische Fähigkeiten als auch den professionellen Umgang mit Kunden weiterentwickeln konnte.<br><br>
-          Trotzdem habe ich gemerkt, dass mir beim Themenfeld RPA die echte Begeisterung fehlte – eine Begeisterung, die ich letztlich im Game Development gefunden habe.<br><br>
-          Aktuell tauche ich tief in die Unreal Engine 5 ein und beschäftige mich mit dem Aufbau modularer Systeme und einer klar strukturierten technischen Architektur. Mein Ziel ist es, Systeme zu entwickeln, die das Spielerlebnis besonders machen, und Spiele zu erschaffen, die andere genauso begeistern, wie sie mich begeistern.
+      <!-- Panel mit Text -->
+      <div class="about-main-panel">
+        <h1>Über mich</h1>
+        <div class="about-intro-highlight">
+          <span class="about-highlight">"Gaming ist mehr als ein Hobby – es ist mein Weg, Kreativität und Technik zu verbinden."</span>
+        </div>
+
+        <div class="about-columns">
+          <div>
+            <h2>Wer ich bin</h2>
+            <p>
+              Ich bin <strong>Lukas Kahmann</strong> – Entwickler und leidenschaftlicher Gamer.<br>
+              Videospiele begleiten mich seit meiner Kindheit: Zuerst als Spieler, heute auch als Entwickler. Die Faszination für die Systeme hinter einem gelungenen Spielerlebnis hat mich nie losgelassen.
+            </p>
+            <p>
+              <span class="about-subheadline">Technische Vielfalt</span><br>
+              Während meines dualen Informatikstudiums an der Ostfalia Hochschule habe ich die gesamte Bandbreite moderner Softwareentwicklung kennengelernt: Von klassischem Software Engineering, über Webentwicklung bis hin zu Datenbanken – mit praktischem Einsatz von Java, C#, JavaScript, C++ und Python.
+            </p>
+            <p>
+              <span class="about-subheadline">Praxiserfahrung</span><br>
+              In diversen Projekten, insbesondere im Bereich <strong>Robotic Process Automation</strong>, konnte ich mein Wissen anwenden und weitergeben. Doch: Trotz aller fachlichen Herausforderungen fehlte mir die echte Begeisterung.
+            </p>
+            <blockquote>
+              <span>„Ich wollte mehr: Kreativität, Innovation, echtes Game Feeling.“</span>
+            </blockquote>
+          </div>
+          <div>
+            <h2>Mein Weg zum Game Development</h2>
+            <p>
+              Seit 2023 stecke ich meine Energie gezielt in die Spieleentwicklung mit <strong>Unreal Engine 5</strong>. Der kreative Freiraum, das sofortige visuelle Feedback und das Zusammenspiel aus Technik und Gestaltung – hier bin ich in meinem Element.
+            </p>
+            <p>
+              Mein Ziel: Spiele erschaffen, die andere genauso begeistern, wie sie mich selbst packen.<br>
+              Ich möchte Systeme bauen, die ein Spielerlebnis flüssig und klar machen – ohne dass die Technik sich in den Vordergrund drängt.
+            </p>
+          </div>
+        </div>
+        <hr class="about-divider">
+
+        <h2>Lernansatz &amp; Weiterentwicklung</h2>
+        <p>
+          <strong>Autodidaktik, aber strukturiert:</strong> Ich tauche tief ein, suche mir gezielt kleine Herausforderungen und nutze die besten Tools: Udemy, Coursera, YouTube, Discord, Foren.
+        </p>
+        <p>
+          <span class="about-highlight-box">ChatGPT ist mein täglicher Sparringpartner – zum Planen, Debuggen, Dokumentieren und immer dann, wenn es um neue Perspektiven oder Denkanstöße geht.</span>
+        </p>
+        <ul class="about-course-list">
+          <li>Unreal Engine 5: The Complete Beginner’s Course (Udemy)</li>
+          <li>Unreal Engine 5: Blueprint & Intermediate Game Development (Udemy)</li>
+          <li>Introduction to Game Development with Unreal Engine (Coursera)</li>
+        </ul>
+
+        <h2>Fokus: Unreal Engine 5</h2>
+        <p>
+          <strong>Warum UE5?</strong>  
+          Die Engine bietet alles, was ein Solo-Entwickler braucht: Mächtige Tools, visuelle Klarheit, einen modularen Aufbau und eine großartige Community.  
+          Mein Workflow entwickelt sich mit jedem Projekt weiter – und die Möglichkeiten wachsen täglich.
+        </p>
+        <p class="about-quote">
+          <span>„Wer Spiele baut, muss die Technik meistern – aber vor allem: den Funken der Begeisterung weitergeben.“</span>
         </p>
       </div>
+      <!-- Zeitstrahl rechts -->
       <div class="about-timeline-outer">
         <div class="about-timeline-full">
           <div class="timeline-entry">
             <div class="timeline-full-dot"></div>
-            <div>
+            <div class="timeline-full-info">
               <div class="timeline-full-date">2018</div>
               <div class="timeline-full-text">Abitur</div>
             </div>
@@ -42,7 +92,7 @@
           <div class="timeline-full-line"></div>
           <div class="timeline-entry">
             <div class="timeline-full-dot"></div>
-            <div>
+            <div class="timeline-full-info">
               <div class="timeline-full-date">2018–2023</div>
               <div class="timeline-full-text">Duales Informatik Studium</div>
             </div>
@@ -50,18 +100,24 @@
           <div class="timeline-full-line"></div>
           <div class="timeline-entry">
             <div class="timeline-full-dot"></div>
-            <div>
+            <div class="timeline-full-info">
               <div class="timeline-full-date">2023–Heute</div>
               <div class="timeline-full-text">Arbeit als RPA-Entwickler & Game Developer</div>
             </div>
           </div>
+          <div class="timeline-full-line"></div>
+          <div class="timeline-entry">
+            <div class="timeline-full-dot"></div>
+            <div class="timeline-full-info">
+              <div class="timeline-full-date">2025–Heute</div>
+              <div class="timeline-full-text">Start als Game Developer</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
-
-<footer id="footer"></footer>
-<script src="js/includes.js"></script>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="js/includes.js"></script>
 </body>
 </html>

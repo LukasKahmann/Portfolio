@@ -7,6 +7,10 @@
   --white: #fff;
   --text-main: #e8eddf;
   --text-light: #cfdbd5;
+  --nav-height: 96px;
+  --logo-size: 50px;
+  --nav-gap: 36px;
+  --body-font-size: 1.15rem;
 }
 
 body {
@@ -15,6 +19,114 @@ body {
   background: var(--bg);
   color: var(--text-main);
   min-height: 100vh;
+  font-size: var(--body-font-size);
+}
+
+/* === NAVBAR STRUKTUR === */
+header {
+  background: var(--primary);
+  height: var(--nav-height);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+}
+
+.navbar {
+  width: 100vw;
+  max-width: 100vw;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  box-sizing: border-box;
+  background: var(--primary);
+}
+
+.nav-logo-container {
+  flex: 0 0 auto;
+  margin-left: 16px;
+  margin-right: 20px;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  width: var(--logo-size);
+  height: var(--logo-size);
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  border: 2.5px solid #fff;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.09);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  opacity: 0.89;
+  transition: opacity 0.2s, border-bottom 0.2s;
+}
+.nav-links a:hover,
+.nav-links .active a {
+  border-bottom: 2.5px solid var(--accent);
+  opacity: 1;
+}
+
+.nav-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: auto;
+}
+.site-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  color: var(--bg);
+  background: transparent;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.site-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.nav-right {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.nav-right a {
+  color: var(--bg);
+  font-size: 1.35rem;
+  opacity: 0.88;
+  transition: opacity 0.2s, color 0.2s;
+}
+.nav-right a:hover {
+  color: var(--accent);
+  opacity: 1;
 }
 
 /* === PROJEKT-KARTEN, HERO, ETC (Dein Restliches Design) === */
@@ -158,9 +270,8 @@ body {
   color: #fafafa;
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
+  font-size: var(--body-font-size);
 }
-
-
 
 .project-about h2,
 .project-details h2 {
