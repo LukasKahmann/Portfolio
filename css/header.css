@@ -4,13 +4,11 @@
   --accent: #f5cb5c;
   --nav-height: 96px;
   --logo-size: 50px;
-  --nav-gap-from-center: 1000px; /* NAV Abstand von der Mitte (anpassen nach Wunsch!) */
-  --nav-icon-size: 2rem;   /* Größe der Social-Icons */
-  --nav-title-size: 2.75rem;   /* Größe vom Namen */
-  --nav-link-size: 1.5rem;   /* Größe der Links (Projects, About etc.) */
+  --nav-icon-size: 2rem;
+  --nav-title-size: 2.4rem;
+  --nav-link-size: 1.3rem;
 }
 
-/* --- NAVBAR GRUNDSTRUKTUR --- */
 header {
   background: var(--primary);
   height: var(--nav-height);
@@ -20,23 +18,34 @@ header {
   width: 100vw;
   min-width: 100vw;
 }
+
 .navbar {
-  position: relative;
-  width: 100vw;
-  height: var(--nav-height);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  width: 100vw;
+  max-width: 100vw;
   background: var(--primary);
   box-sizing: border-box;
+  gap: 0;
+  padding: 0 36px;
+  position: relative;
 }
 
-/* --- LOGO GANZ LINKS --- */
+/* Linke Section: Logo + Links */
+.nav-section-left {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-width: 0;
+}
+
+/* Logo ganz links */
 .nav-logo-container {
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 20;
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
 }
 .nav-logo {
   width: var(--logo-size);
@@ -48,14 +57,10 @@ header {
   box-shadow: 0 1px 8px rgba(0,0,0,0.09);
 }
 
-/* --- LINKS-LISTE (LEFT VON DER MITTE) --- */
+/* Links */
 .nav-links.nav-left {
-  position: absolute;
-  right: calc(50% + var(--nav-gap-from-center));
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
-  gap: 34px;
+  gap: 32px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -75,15 +80,17 @@ header {
   opacity: 1;
 }
 
-/* --- NAME EXAKT MITTIG --- */
-.nav-center-absolute {
+/* Name exakt zentriert, unabhängig von Links/Socials */
+.nav-center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  white-space: nowrap;
-  z-index: 10;
+  z-index: 2;
+  display: flex;
+  align-items: center;
 }
+
 .site-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -93,18 +100,22 @@ header {
   background: transparent;
   text-decoration: none;
   transition: opacity 0.2s;
+  text-align: center;
+  padding: 0 24px;
+  white-space: nowrap;
 }
 .site-title:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-/* --- SOCIALS (RECHTS VON DER MITTE) --- */
+/* Rechte Section: Socials */
+.nav-section-right {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
 .nav-right {
-  position: absolute;
-  left: calc(50% + var(--nav-gap-from-center));
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   align-items: center;
   gap: 28px;
@@ -120,16 +131,16 @@ header {
   opacity: 1;
 }
 
-/* --- RESPONSIVE FÜR KLEINE DISPLAYS --- */
+/* Responsive */
 @media (max-width: 900px) {
-  :root { --nav-height: 68px; --logo-size: 30px; --nav-gap-from-center: 120px; }
-  .site-title { font-size: 1.2rem; }
-  .nav-links.nav-left { gap: 18px; }
-  .nav-right { gap: 14px; }
+  :root { --nav-height: 68px; --logo-size: 30px; }
+  .navbar { padding: 0 10px; }
+  .site-title { font-size: 1.2rem; padding: 0 6px; }
+  .nav-links.nav-left { gap: 14px; }
+  .nav-right { gap: 12px; }
 }
 @media (max-width: 600px) {
-  :root { --nav-gap-from-center: 52px; }
-  .site-title { font-size: 1.01rem; }
-  .nav-links.nav-left { gap: 9px; }
+  .site-title { font-size: 1.01rem; padding: 0 2px; }
+  .nav-links.nav-left { gap: 7px; }
   .nav-logo { width: 22px; height: 22px; }
 }

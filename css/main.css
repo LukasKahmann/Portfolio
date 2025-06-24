@@ -276,5 +276,28 @@ body {
 .project-about h2,
 .project-details h2 {
   font-size: 1.3rem;
-  margin
+}
+
+.project-arrow {
+  position: absolute;
+  right: 18px;        /* Abstand zum rechten Rand */
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;   /* oder deine Kartenfarbe */
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  font-size: 1.2em;
+  color: #3a334c;     /* oder dein Akzentton */
+  transition: background 0.2s, color 0.2s;
+  pointer-events: none; /* Klick geht weiterhin auf die Karte */
+}
+
+.project-card:hover .project-arrow {
+  background: #3a334c;  /* Akzentfarbe beim Hover */
+  color: #fff;
 }
