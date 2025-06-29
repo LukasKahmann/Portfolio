@@ -3,126 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lukas Kahmann | Game Dev Portfolio – Harry Potter Fangame-Prototyp (UE5)</title>
+  <title>Beginner Puzzle Game | Lukas Kahmann Portfolio</title>
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/project-detail.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
   <header id="header"></header>
-
   <main class="project-main">
     <section class="project-hero">
-      <video class="project-image" src="https://www.dropbox.com/scl/fi/7bqtq12zlxkg1inyx2mzw/Beginner-Puzzle-Game_Long_Cropped.mp4?rlkey=47u7bn704zt34s8901a8uzlwf&st=igvuhoab&raw=1" autoplay loop muted playsinline poster="../assets/hp-prototype-thumb.jpg"></video>
+      <video class="project-image" src="https://www.dropbox.com/scl/fi/7bqtq12zlxkg1inyx2mzw/Beginner-Puzzle-Game_Long_Cropped.mp4?rlkey=47u7bn704zt34s8901a8uzlwf&st=igvuhoab&raw=1" autoplay loop muted playsinline></video>
       <div class="project-title-box">
-        <h1>Harry Potter Fangame</h1>
-        <span class="project-role">Solo-Entwickler</span>
+        <h1>Beginner Puzzle Game</h1>
+        <span class="project-role" data-i18n="project_role"></span>
       </div>
     </section>
 
     <div class="project-detail-layout">
       <section class="project-info-row">
         <div class="project-about card">
-          <h2>Über das Projekt</h2>
-          <p>
-            Dieses Projekt war mein erstes eigenes Game Projekt ohne feste Anleitung oder Kursstruktur. Um ein festes Ziel zu definieren, habe ich mich dazu entschieden, Mechaniken aus einem bestehenden Spiel nachzubauen – konkret aus „Harry Potter und die Kammer des Schreckens“ (PC), das mich in meiner Kindheit stark geprägt hat. Das Spiel bot mir einen bekannten Rahmen, in dem ich Mechaniken wie Zaubersprüche, Türen oder Objektinteraktionen umsetzen konnte – aber mit einem modernen, technischen Ansatz.
-          </p>
+          <h2 data-i18n="about_project"></h2>
+          <p data-i18n="about_intro"></p>
         </div>
         <div class="project-details card">
-          <h2>Projektinfo</h2>
-          <div class="project-info-row"><i class="fa-solid fa-user-gear"></i> Rolle: Solo-Entwickler</div>
-          <div class="project-info-row"><i class="fa-solid fa-cube"></i> Projektart: Lernprojekt</div>
+          <h2 data-i18n="project_info"></h2>
+          <div class="project-info-row"><i class="fa-solid fa-user-gear"></i> <span data-i18n="role_label"></span>: <span data-i18n="project_role"></span></div>
+          <div class="project-info-row"><i class="fa-solid fa-cube"></i> <span data-i18n="type_label"></span>: <span data-i18n="project_type"></span></div>
           <div class="project-info-row"><i class="fa-solid fa-microchip"></i> Engine: Unreal Engine 5 (Blueprints)</div>
-          <div class="project-info-row"><i class="fa-solid fa-circle-check"></i> Status: Prototyp</div>
+          <div class="project-info-row"><i class="fa-solid fa-circle-check"></i> <span data-i18n="status_label"></span>: <span data-i18n="project_status"></span></div>
         </div>
       </section>
-
       <div class="project-detail-body card">
-        <h3>Lernziele und Motivation</h3>
-        <p>
-          Mein Ziel war es, mich mit Unreal Engine 5 vertraut zu machen und ein vollständiges, funktionierendes System zu entwickeln – von der technischen Logik bis zur visuellen Darstellung. Ich habe das Projekt vollständig mit Blueprints umgesetzt und dabei iterativ gearbeitet: immer genau das umgesetzt, was ich gerade brauchte. Neue Themen habe ich mir über YouTube-Tutorials und Forenbeiträge selbst beigebracht – Schritt für Schritt, Feature für Feature.
-        </p>
+        <h3 data-i18n="learning_goals_head"></h3>
+        <p data-i18n="learning_goals"></p>
 
-        <h3>Umgesetzte Zauber-Mechaniken</h3>
+        <h3 data-i18n="gameplay_head"></h3>
+        <p data-i18n="gameplay_intro"></p>
+
+        <strong data-i18n="fire_barrier_head"></strong><br>
+        <p data-i18n="fire_barrier_text"></p>
+        <div class="project-body-media-single"><video src="../assets/FireBarrier.mp4" autoplay loop muted playsinline></video></div>
+
+        <strong data-i18n="platforms_head"></strong><br>
+        <p data-i18n="platforms_text"></p>
+        <div class="project-body-media-single"><video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video></div>
+
+        <strong data-i18n="enemy_spheres_head"></strong><br>
+        <p data-i18n="enemy_spheres_text"></p>
+        <div class="project-body-media-single"><video src="../assets/EnemySpheres_1.mp4" autoplay loop muted playsinline></video><br></div>
+        <div class="project-body-media-single"><video src="../assets/EnemySpheres_2.mp4" autoplay loop muted playsinline></video><br></div>
+
+        <strong data-i18n="game_over_head"></strong><br>
+        <p data-i18n="game_over_text"></p>
+        <div class="project-body-media-single"><video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video></div>
+        
+        <strong data-i18n="door_head"></strong><br>
+        <p data-i18n="door_text"></p>
+        <div class="project-body-media-single"><video src="../assets/Door.mp4" autoplay loop muted playsinline></video></div>
+
+        <h3 data-i18n="features_head"></h3>
         <ul>
-          <li>
-            <strong>Spongify (Sprungteppich)</strong><br>
-            Nach Interaktion verwandelt sich ein Teppich in ein Sprungpad.<br>
-            Spieler wird beim Springen dynamisch nach oben katapultiert.<br>
-            <div class="project-body-media-single">
-              <div class="project-placeholder-img"><span>GIF: Spieler springt auf Spongify-Teppich und wird in die Luft geschleudert</span></div>
-            </div>
-          </li>
-          <li>
-            <strong>Flipendo (Stoßzauber)</strong><br>
-            Stoßt Objekte weg oder aktiviert Schalter.<br>
-            Umsetzung mit Line Trace + Niagara-Visualisierung.<br>
-            <div class="project-body-media-single">
-              <div class="project-placeholder-img"><span>GIF: Flipendo trifft Block → Block verschiebt sich</span></div>
-            </div>
-          </li>
-          <li>
-            <strong>Diffindo (Zerschneidungszauber)</strong><br>
-            Löst Blockaden oder Seile visuell auf.<br>
-            Verwendet Niagara-Emitter + sich auflösendes Material.<br>
-            <div class="project-body-media-single">
-              <div class="project-placeholder-img"><span>GIF: Seil löst sich langsam durch Zauber auf</span></div>
-            </div>
-          </li>
-          <li>
-            <strong>Alohomora (Türöffner)</strong><br>
-            Öffnet Türen, die sich um eine Mittelachse drehen.<br>
-            Türen können sich selbstständig wieder schließen oder offen bleiben. Animiert per Timeline.<br>
-            <div class="project-body-media-single">
-              <div class="project-placeholder-img"><span>GIF: Zauber trifft Tür → Tür öffnet sich</span></div>
-            </div>
-          </li>
-          <li>
-            <strong>Sectumsempra (Objektreaktion)</strong><br>
-            Trifft ein Krabben-Asset, das sich überschlägt und kurzzeitig hilflos bleibt.<br>
-            Steuerung über Velocity-Impulse und Zustandserkennung.<br>
-            <div class="project-body-media-single">
-              <div class="project-placeholder-img"><span>GIF: Krabbe wird getroffen und fällt auf den Rücken</span></div>
-            </div>
-          </li>
+          <li data-i18n="feature1"></li>
+          <li data-i18n="feature2"></li>
+          <li data-i18n="feature3"></li>
+          <li data-i18n="feature4"></li>
+          <li data-i18n="feature5"></li>
+          <li data-i18n="feature6"></li>
+          <li data-i18n="feature7"></li>
         </ul>
 
-        <h3>Interaktions- und Zaubersystem</h3>
-        <ul>
-          <li>Zauberstab-Animation: Der Charakter hebt den Arm beim Wirken</li>
-          <li>Visueller Zaubereffekt mit Niagara, abhängig vom gewählten Zauber</li>
-          <li>Crosshair-Zielsystem: Präzise Interaktionen per Line Trace</li>
-          <li>Modulares Zauber- und Interaktionssystem: Jedes Objekt besitzt ein Interface und kann individuell reagieren</li>
-          <li>
-            <div class="project-placeholder-img"><span>Bild: UI mit Interaktions-Widget über einem Objekt</span></div>
-          </li>
-          <li>
-            <div class="project-placeholder-img"><span>Bild: Zaubereffekt in verschiedenen Farben je nach Spell</span></div>
-          </li>
-        </ul>
-
-        <h3>Technischer Aufbau</h3>
-        <ul>
-          <li>Unreal Engine 5 Third Person Template als Basis</li>
-          <li>Blueprint-only</li>
-          <li>Timelines für Animationen</li>
-          <li>Niagara für visuelle Effekte</li>
-          <li>Interfaces für Interaktion und Zauberhandling</li>
-          <li>Material- und Asset-Nutzung über Quixel Megascans</li>
-          <li>Systematischer Ausbau über gezielte Lernphasen und Tutorials</li>
-        </ul>
-
-        <h3>Fazit</h3>
-        <p>
-          Das Projekt war für mich ein Einstieg in den eigenständigen Umgang mit der Unreal Engine. Ohne externe Vorgabe entwickelte ich ein modulares System mit bekannten Spielmechaniken – lernorientiert, lösungsorientiert und immer mit dem Ziel, ein funktionierendes Gesamtsystem zu erschaffen. Der sichtbare Fortschritt und das Zusammenwirken der einzelnen Mechaniken war eine große Motivation – und gleichzeitig ein Testfeld für sauberes Arbeiten, Effektgestaltung und Logikentwicklung.
-        </p>
+        <h3 data-i18n="reflection_head"></h3>
+        <p data-i18n="reflection_text"></p>
       </div>
     </div>
   </main>
-
   <footer id="footer"></footer>
   <script src="../js/includes.js"></script>
 </body>

@@ -1,0 +1,44 @@
+{
+  "project_role": "Solo Developer",
+  "about_project": "Über das Projekt",
+  "about_intro": "Im Rahmen meines Einstiegs ins Game Development mit Unreal Engine 5 habe ich den Udemy-Kurs 'The Complete Beginner’s Course' bearbeitet. Ziel war es, die Grundlagen von Game-Mechaniken durch ein eigenes kleines Puzzle-Game mit Blueprints zu erlernen. Im Projekt habe ich grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events sowie Sieg- und Niederlagenbedingungen umgesetzt – alles auf Basis des Third Person Templates von Unreal.",
+  "project_info": "Projektinfo",
+  "role_label": "Rolle:",
+  "type_label": "Projekttyp:",
+  "project_type": "Lernprojekt",
+  "status_label": "Status:",
+  "project_status": "Abgeschlossen",
+
+  "learning_goals_head": "Lernziele & Hintergrund",
+  "learning_goals": "Dies war mein erstes Projekt in Unreal Engine 5. Ziel war es, die Struktur eines einfachen Spiels nachzuvollziehen, indem ich ein bestehendes Kursprojekt nachbaue – und zu verstehen, welche Bausteine notwendig sind, um ein kleines, aber funktionierendes Level zu erstellen. Dabei habe ich sowohl die Funktionsweise von Blueprints als auch das Arbeiten mit Game-Objekten, Kollisionen und Triggern kennengelernt.",
+
+  "gameplay_head": "Gameplay",
+  "gameplay_intro": "Das Spielziel ist simpel: Der Spieler startet am Anfang eines linearen Gangs und muss eine verschlossene Tür am Ende erreichen. Die Tür öffnet sich jedoch nur, wenn vorher drei Kugeln eingesammelt wurden. Der Weg zur Tür ist durch verschiedene Hindernisse versperrt.",
+
+  "fire_barrier_head": "Feuerbarriere",
+  "fire_barrier_text": "Die Barriere verursacht beim Berühren Schaden und soll den Spieler dazu anregen, das Hindernis über eine Treppe zu umgehen. Beim Überqueren sammelt der Spieler die erste Schlüsselkugel ein. Der Feuereffekt wurde mit Assets aus dem Unreal Starter Content realisiert.",
+
+  "platforms_head": "Schwebende Plattformen",
+  "platforms_text": "Vertikal bewegliche Plattformen ermöglichen es dem Spieler, eine Lücke zu überwinden und die zweite Schlüsselkugel zu sammeln. Ein Sturz in die Lücke führt zum Tod.",
+
+  "enemy_spheres_head": "Feindliche Kugeln",
+  "enemy_spheres_text": "Kugeln patrouillieren auf engen Passagen und blockieren den Weg des Spielers. Bei Berührung verursachen sie Schaden.",
+
+  "game_over_head": "Game Over",
+  "game_over_text": "Sinkt die Lebensenergie auf Null oder fällt der Spieler in die Lücke, endet das Spiel. Ein Game-Over-Bildschirm erscheint, auf dem man neu starten oder beenden kann.",
+
+  "door_head": "Verschlossene Tür",
+  "door_text": "Am Ende des Levels steht eine Tür, die sich nur öffnet, wenn alle drei Kugeln eingesammelt wurden. Die dritte Kugel befindet sich in einem der vier identischen Häuser auf dem Weg. Versucht man, die Tür ohne alle Kugeln zu öffnen, erscheint ein Hinweis. Erst mit allen drei Kugeln kann die Tür geöffnet und das Level abgeschlossen werden. Nach dem Durchgang erscheint ein Sieg-Bildschirm.",
+
+  "features_head": "Umgesetzte Features",
+  "feature1": "Health-System mit UI-basierter Lebensanzeige",
+  "feature2": "Schadensberechnung bei Kollision mit Gegnerobjekten",
+  "feature3": "Feedback über Textnachrichten und HUD",
+  "feature4": "Game-Over- und Sieg-Bildschirm mit Neustart-/Beenden-Option",
+  "feature5": "Bewegliche Plattformen und Hindernisse via Timelines",
+  "feature6": "Interaktion zum Öffnen der Tür je nach gesammelten Kugeln",
+  "feature7": "Verwendung von Unreal Starter Content für Effekte",
+
+  "reflection_head": "Reflexion",
+  "reflection_text": "Trotz der klaren Kurs-Vorgaben habe ich viel gelernt, indem ich Mechaniken eigenständig umgesetzt und angepasst habe. Das Projekt war eine wertvolle Grundlage für eigene Ideen – und hat geholfen, das Arbeiten mit Blueprints, Events und UI-Elementen in Unreal wirklich zu verinnerlichen. Die klare Struktur und das wiederholte Testen waren dabei besonders hilfreich."
+}

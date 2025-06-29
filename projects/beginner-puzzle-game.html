@@ -3,97 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lukas Kahmann | Game Dev Portfolio – Beginner Puzzle Game</title>
+  <title>Beginner Puzzle Game | Lukas Kahmann Portfolio</title>
   <link rel="icon" type="image/png" href="../assets/logo.png" />
   <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/project-detail.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
   <header id="header"></header>
-
   <main class="project-main">
     <section class="project-hero">
       <video class="project-image" src="https://www.dropbox.com/scl/fi/7bqtq12zlxkg1inyx2mzw/Beginner-Puzzle-Game_Long_Cropped.mp4?rlkey=47u7bn704zt34s8901a8uzlwf&st=igvuhoab&raw=1" autoplay loop muted playsinline></video>
       <div class="project-title-box">
         <h1>Beginner Puzzle Game</h1>
-        <span class="project-role">Solo Entwickler</span>
+        <span class="project-role" data-i18n="project_role"></span>
       </div>
     </section>
 
-    <!-- NEUES LAYOUT -->
     <div class="project-detail-layout">
       <section class="project-info-row">
         <div class="project-about card">
-          <h2>Über das Projekt</h2>
-          <p>
-            Im Rahmen meines Einstiegs in die Spieleentwicklung mit Unreal Engine 5 habe ich den Kurs „The Complete Beginner’s Course“ auf Udemy absolviert. Ziel des Kurses war es, grundlegende Spielmechaniken praktisch zu lernen, indem man ein kleines Puzzle-Game mit Blueprints erstellt. Im Projektverlauf habe ich verschiedene grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events, sowie Sieg- und Verlustzustände umgesetzt – alles auf Basis des Third-Person-Templates von Unreal.
-          </p>
+          <h2 data-i18n="about_project"></h2>
+          <p data-i18n="about_intro"></p>
         </div>
         <div class="project-details card">
-          <h2>Projektinfo</h2>
-          <div class="project-info-row"><i class="fa-solid fa-user-gear"></i> Rolle: Solo Entwickler</div>
-          <div class="project-info-row"><i class="fa-solid fa-cube"></i> Projektart: Lernprojekt</div>
+          <h2 data-i18n="project_info"></h2>
+          <div class="project-info-row"><i class="fa-solid fa-user-gear"></i> <span data-i18n="role_label"></span><span data-i18n="project_role"></span></div>
+          <div class="project-info-row"><i class="fa-solid fa-cube"></i><span data-i18n="type_label"></span><span data-i18n="project_type"></span></div>
           <div class="project-info-row"><i class="fa-solid fa-microchip"></i> Engine: Unreal Engine 5 (Blueprints)</div>
-          <div class="project-info-row"><i class="fa-solid fa-circle-check"></i> Status: Abgeschlossen</div>
+          <div class="project-info-row"><i class="fa-solid fa-circle-check"></i><span data-i18n="status_label"></span><span data-i18n="project_status"></span></div>
         </div>
       </section>
       <div class="project-detail-body card">
-        <h3>Lernziele und Hintergrund</h3>
-        <p>
-          Dieses Projekt war mein erstes Projekt in Unreal Engine 5. Mein Ziel war es, durch Nachbauen eines bestehenden Kursprojekts zu verstehen, wie einfache Spiele aufgebaut sind – und welche Bausteine notwendig sind, um einen kleinen, aber funktionalen Level zu entwickeln. Dabei konnte ich sowohl die Funktionsweise der Blueprints als auch das Verhalten von Spielobjekten, Kollisionen und Triggern besser nachvollziehen.
-        </p>
+        <h3 data-i18n="learning_goals_head"></h3>
+        <p data-i18n="learning_goals"></p>
 
-        <h3>Spielablauf</h3>
-        <p>
-          Das Spielziel ist simpel: Der Spieler startet am Beginn eines linearen Korridors und muss am Ende eine verschlossene Tür erreichen. Diese Tür lässt sich jedoch erst öffnen, wenn der Spieler zuvor drei Sphären eingesammelt hat. Der Weg zur Tür ist dabei durch mehrere Hindernisse erschwert.
-        </p>
+        <h3 data-i18n="gameplay_head"></h3>
+        <p data-i18n="gameplay_intro"></p>
 
+        <strong data-i18n="fire_barrier_head"></strong><br>
+        <p data-i18n="fire_barrier_text"></p>
+        <div class="project-body-media-single"><video src="../assets/FireBarrier.mp4" autoplay loop muted playsinline></video></div>
 
-          <strong>Die Feuerbarriere</strong><br>
-          <p>Die Barriere fügt dem Spieler bei einer Berührung Schaden zu und soll ihn dazu bringen, das Hindernis über eine Treppe zu überwinden. Beim Überqueren der Barriere kann der Spieler die erste Schlüssel-Sphere einsammeln. Der Feuereffekt wird mithilfe von Assets aus dem Unreal Starter Content dargestellt.</p>
-          <div class="project-body-media-single"> <video src="../assets/FireBarrier.mp4" autoplay loop muted playsinline></video> </div>
+        <strong data-i18n="platforms_head"></strong><br>
+        <p data-i18n="platforms_text"></p>
+        <div class="project-body-media-single"><video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video></div>
 
-          <strong>Schwebende Plattformen</strong><br>
-          <p>Sich vertikal bewegende Plattformen stellen den Weg dar, um einen Abgrund zu überwinden. Dabei kann der Spieler die zweite Schlüssel-Sphäre einsammeln. Sollte der Spieler dabei in den Abgrund fallen, ist er Tot.</p>
-          <div class="project-body-media-single"> <video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video> </div>
+        <strong data-i18n="enemy_spheres_head"></strong><br>
+        <p data-i18n="enemy_spheres_text"></p>
+        <div class="project-body-media-single"><video src="../assets/EnemySpheres_1.mp4" autoplay loop muted playsinline></video><br></div>
+        <div class="project-body-media-single"><video src="../assets/EnemySpheres_2.mp4" autoplay loop muted playsinline></video><br></div>
 
-          <strong>Gegner Sphären</strong><br>
-          <p>Kugeln patrouillieren an Engpässen und versperren dem Spieler den Weg. Bei einer Berührung fügen sie dem Spieler Schaden zu.</p>
-          <div class="project-body-media-single"> <video src="../assets/EnemySpheres_1.mp4" autoplay loop muted playsinline></video><br></div>
-          <div class="project-body-media-single"> <video src="../assets/EnemySpheres_2.mp4" autoplay loop muted playsinline></video><br></div>
+        <strong data-i18n="game_over_head"></strong><br>
+        <p data-i18n="game_over_text"></p>
+        <div class="project-body-media-single"><video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video></div>
+        
+        <strong data-i18n="door_head"></strong><br>
+        <p data-i18n="door_text"></p>
+        <div class="project-body-media-single"><video src="../assets/Door.mp4" autoplay loop muted playsinline></video></div>
 
-          <strong>Game-Over</strong><br>
-          <p>Sinkt die Lebensanzeige des Spielers auf 0 oder fällt der Spieler in den Abgrund, ist das Spiel vorbei. Anschließend erscheint ein Game-Over-Screen, auf dem der Spieler die Möglichkeit hat, das Spiel neu zu starten oder zu beenden.</p>
-          <div class="project-body-media-single"> <video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video> </div>
-          
-          <strong>Verschlossene Tür</strong><br>
-          <p>Am Ende des Levels befindet sich eine Tür, die nur geöffnet werden kann, wenn der Spieler zuvor alle drei Sphären eingesammelt hat. Die dritte Sphäre befindet sich in einem der vier identisch aussehenden Häuser, an denen der Spieler auf dem Weg zur Tür vorbeigelaufen ist.
-          Versucht der Spieler, die Tür zu öffnen, ohne alle drei Sphären eingesammelt zu haben, erscheint eine Hinweismeldung, die darauf aufmerksam macht, dass noch eine Sphäre fehlt. Erst wenn alle drei Sphären eingesammelt wurden, lässt sich die Tür öffnen und das Level erfolgreich abschließen. Beim Durschreiten der Tür Erscheint ein Victory-Screen.</p>
-          <div class="project-body-media-single"> <video src="../assets/Door.mp4" autoplay loop muted playsinline></video> </div>
-
-
-        <h3>Umgesetzte Features</h3>
+        <h3 data-i18n="features_head"></h3>
         <ul>
-          <li>Health-System mit UI-basierter Health Bar</li>
-          <li>Schaden durch Kollision/Overlap mit Gegnerobjekten</li>
-          <li>Feedback über Text-Meldungen und HUD</li>
-          <li>Game-Over und Victory Screen mit Restart und Quit Optionen</li>
-          <li>Bewegliche Plattformen und Hindernisse mit Timelines</li>
-          <li>Interaktion zur Türöffnung abhängig von eingesammelten Sphären</li>
-          <li>Verwendung des Unreal Starter Contents für visuelle Effekte</li>
+          <li data-i18n="feature1"></li>
+          <li data-i18n="feature2"></li>
+          <li data-i18n="feature3"></li>
+          <li data-i18n="feature4"></li>
+          <li data-i18n="feature5"></li>
+          <li data-i18n="feature6"></li>
+          <li data-i18n="feature7"></li>
         </ul>
 
-        <h3>Reflektion</h3>
-        <p>
-          Trotz der klaren Vorgaben im Kurs konnte ich beim Umsetzen der Mechaniken viel über ihre Funktionsweise lernen und sie an verschiedenen Stellen sinnvoll anpassen oder erweitern. Das Projekt wurde dadurch zu einer wertvollen Basis für eigene Ideen – und hat mir geholfen, die Arbeit mit Blueprints, Events und UI-Elementen in Unreal wirklich zu verinnerlichen. Der klare Aufbau und das wiederholte Ausprobieren im Detail haben mir dabei besonders weitergeholfen.
-        </p>
+        <h3 data-i18n="reflection_head"></h3>
+        <p data-i18n="reflection_text"></p>
       </div>
     </div>
   </main>
-
   <footer id="footer"></footer>
   <script src="../js/includes.js"></script>
 </body>

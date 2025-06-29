@@ -1,0 +1,44 @@
+{
+  "project_role": "Solo Developer",
+  "about_project": "About this Project",
+  "about_intro": "As part of my introduction to game development with Unreal Engine 5, I completed the course 'The Complete Beginner’s Course' on Udemy. The goal was to learn core game mechanics by building a small puzzle game using Blueprints. In this project, I implemented basic elements like interaction, UI, collision, trigger events, as well as win and loss conditions – all based on Unreal’s Third Person Template.",
+  "project_info": "Project Info",
+  "role_label": "Role",
+  "type_label": "Project Type",
+  "project_type": "Learning Project",
+  "status_label": "Status",
+  "project_status": "Completed",
+
+  "learning_goals_head": "Learning Goals & Background",
+  "learning_goals": "This was my first project in Unreal Engine 5. My goal was to understand the structure of simple games by rebuilding an existing course project – and to learn which building blocks are necessary to create a small but functional level. Along the way, I learned both how Blueprints work and how to deal with game objects, collisions, and triggers.",
+
+  "gameplay_head": "Gameplay",
+  "gameplay_intro": "The game objective is simple: The player starts at the beginning of a linear corridor and must reach a locked door at the end. However, the door only opens if the player has collected three spheres before. The path to the door is blocked by several obstacles.",
+
+  "fire_barrier_head": "Fire Barrier",
+  "fire_barrier_text": "The barrier damages the player on touch and is meant to encourage them to overcome the obstacle via stairs. While crossing, the player collects the first key sphere. The fire effect is created using assets from Unreal Starter Content.",
+
+  "platforms_head": "Floating Platforms",
+  "platforms_text": "Vertically moving platforms allow the player to cross a gap and collect the second key sphere. If the player falls into the gap, it results in death.",
+
+  "enemy_spheres_head": "Enemy Spheres",
+  "enemy_spheres_text": "Spheres patrol narrow areas and block the player’s path. On touch, they deal damage to the player.",
+
+  "game_over_head": "Game Over",
+  "game_over_text": "If the player's health reaches zero or the player falls into the gap, the game ends. A game over screen appears, letting the player restart or quit.",
+
+  "door_head": "Locked Door",
+  "door_text": "At the end of the level is a door that only opens if the player has collected all three spheres. The third sphere is located in one of four identical houses along the way. If the player tries to open the door without all spheres, a hint message appears. Only with all three collected, the door can be opened and the level is completed. After passing through the door, a victory screen appears.",
+
+  "features_head": "Implemented Features",
+  "feature1": "Health system with UI-based health bar",
+  "feature2": "Damage from collision/overlap with enemy objects",
+  "feature3": "Feedback via text messages and HUD",
+  "feature4": "Game over and victory screen with restart and quit options",
+  "feature5": "Moving platforms and obstacles using Timelines",
+  "feature6": "Interaction to open the door depending on collected spheres",
+  "feature7": "Use of Unreal Starter Content for visual effects",
+
+  "reflection_head": "Reflection",
+  "reflection_text": "Despite the clear guidelines of the course, I learned a lot by implementing and adapting mechanics on my own. The project became a valuable foundation for my own ideas – and helped me really internalize working with Blueprints, events, and UI elements in Unreal. The clear structure and repeated testing were especially helpful."
+}
