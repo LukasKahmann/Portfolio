@@ -43,80 +43,52 @@
       <div class="project-detail-body card">
         <h3>Lernziele und Hintergrund</h3>
         <p>
-          Dieses Projekt war mein erster Berührungspunkt mit Unreal Engine 5. Mein Ziel war es, durch Nachbauen eines bestehenden Kursprojekts zu verstehen, wie einfache Spiele aufgebaut sind – und welche Bausteine notwendig sind, um einen kleinen, aber funktionalen Level zu entwickeln. Dabei konnte ich sowohl die Funktionsweise der Blueprints als auch das Verhalten von Spielobjekten, Kollisionen und Triggern besser nachvollziehen.
+          Dieses Projekt war mein erstes Projekt in Unreal Engine 5. Mein Ziel war es, durch Nachbauen eines bestehenden Kursprojekts zu verstehen, wie einfache Spiele aufgebaut sind – und welche Bausteine notwendig sind, um einen kleinen, aber funktionalen Level zu entwickeln. Dabei konnte ich sowohl die Funktionsweise der Blueprints als auch das Verhalten von Spielobjekten, Kollisionen und Triggern besser nachvollziehen.
         </p>
 
         <h3>Spielablauf</h3>
         <p>
-          Das Spielziel ist simpel: Der Spieler startet am Beginn eines linearen Korridors und muss am Ende eine verschlossene Tür erreichen. Diese Tür lässt sich jedoch erst öffnen, wenn der Spieler zuvor drei Sphären eingesammelt hat.
-        </p>
-        <p>
-          Der Weg zur Tür ist dabei durch mehrere Mechaniken erschwert:
+          Das Spielziel ist simpel: Der Spieler startet am Beginn eines linearen Korridors und muss am Ende eine verschlossene Tür erreichen. Diese Tür lässt sich jedoch erst öffnen, wenn der Spieler zuvor drei Sphären eingesammelt hat. Der Weg zur Tür ist dabei durch mehrere Hindernisse erschwert.
         </p>
 
-        <ul>
-          <li>
-            <strong>Die Feuerbarriere</strong><br>Die Barriere fügt dem Spieler bei einer Berührung Schaden zu und soll ihn dazu bringen das Hinderniss über eine Treppe zu überwinden. Der Feuer Effekt wird mithilfe von Assets aus dem Unreal Starter Content dargestellt.
-              <div class="project-body-media-single">
-                <video src="../assets/FireBarrier.mp4" autoplay loop muted playsinline></video>
-              </div>
-          </li>
-          <li>
-            <strong>Schwebende Plattformen</strong><br>Vertikal bewegende Plattformen müssen genutzt werden, um einen Abgrund zu überwinden. Dabei kann der Spieler eine der 3 Schlüssel-Sphären einsammeln. Sollte in den Abgrund fallen heißt es Game Over.
-            <!-- <div class="project-body-media-single">
-                <video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="project-body-media-single">
-              <video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video>
-            </div> -->
-            <div class="project-body-media-double">
-               <!-- <video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video>
-              <video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video>
-            </div>  -->
-            <div class="project-body-media-single">
-                <video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="project-body-media-single">
-              <video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video>
-            </div>
-          </li>
-          <li>
-            <strong>Gegner Sphären</strong><br>Kugeln patrolieren an Engpässen und versprerren dem Spieler den Weg. Bei einer Berührung fügen sie dem Spieler Schaden zu.
-            <div class="project-body-media-single">
-                <video src="../assets/EnemySpheres_1.mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="project-body-media-single">
-              <video src="../assets/EnemySpheres_2.mp4" autoplay loop muted playsinline></video>
-            </div>
-          </li>
-          <li>
-            Sinkt die Lebensanzeige (Health Bar) des Spielers auf null oder fällt er ins Leere, erscheint ein Game Over Screen mit der Möglichkeit, das Spiel neu zu starten oder zu beenden.
-          </li>
-          <li>
-            Vor der finalen Tür gibt es vier kleine, identisch aussehende Häuschen. In einem von ihnen befindet sich die letzte Sphäre. Nur wenn alle drei gesammelt wurden, erhält der Spieler Zugriff auf die Tür – andernfalls erscheint eine Meldung, dass noch eine Kugel fehlt.
-            <div class="project-placeholder-img">
-              <span>GIF: Meldung + Finden der dritten Sphäre</span>
-            </div>
-          </li>
-          <li>
-            Nach dem erfolgreichen Durchschreiten der Tür erscheint ein Victory Screen mit denselben Optionen wie beim Game Over.
-          </li>
-        </ul>
+
+          <strong>Die Feuerbarriere</strong><br>
+          <p>Die Barriere fügt dem Spieler bei einer Berührung Schaden zu und soll ihn dazu bringen, das Hindernis über eine Treppe zu überwinden. Beim Überqueren der Barriere kann der Spieler die erste Schlüssel-Sphere einsammeln. Der Feuereffekt wird mithilfe von Assets aus dem Unreal Starter Content dargestellt.</p>
+          <div class="project-body-media-single"> <video src="../assets/FireBarrier.mp4" autoplay loop muted playsinline></video> </div>
+
+          <strong>Schwebende Plattformen</strong><br>
+          <p>Sich vertikal bewegende Plattformen stellen den Weg dar, um einen Abgrund zu überwinden. Dabei kann der Spieler die zweite Schlüssel-Sphäre einsammeln. Sollte der Spieler dabei in den Abgrund fallen, ist er Tot.</p>
+          <div class="project-body-media-single"> <video src="../assets/Platforms.mp4" autoplay loop muted playsinline></video> </div>
+
+          <strong>Gegner Sphären</strong><br>
+          <p>Kugeln patrouillieren an Engpässen und versperren dem Spieler den Weg. Bei einer Berührung fügen sie dem Spieler Schaden zu.</p>
+          <div class="project-body-media-single"> <video src="../assets/EnemySpheres_1.mp4" autoplay loop muted playsinline></video><br></div>
+          <div class="project-body-media-single"> <video src="../assets/EnemySpheres_2.mp4" autoplay loop muted playsinline></video><br></div>
+
+          <strong>Game-Over</strong><br>
+          <p>Sinkt die Lebensanzeige des Spielers auf 0 oder fällt der Spieler in den Abgrund, ist das Spiel vorbei. Anschließend erscheint ein Game-Over-Screen, auf dem der Spieler die Möglichkeit hat, das Spiel neu zu starten oder zu beenden.</p>
+          <div class="project-body-media-single"> <video src="../assets/PlatformFalling.mp4" autoplay loop muted playsinline></video> </div>
+          
+          <strong>Verschlossene Tür</strong><br>
+          <p>Am Ende des Levels befindet sich eine Tür, die nur geöffnet werden kann, wenn der Spieler zuvor alle drei Sphären eingesammelt hat. Die dritte Sphäre befindet sich in einem der vier identisch aussehenden Häuser, an denen der Spieler auf dem Weg zur Tür vorbeigelaufen ist.
+          Versucht der Spieler, die Tür zu öffnen, ohne alle drei Sphären eingesammelt zu haben, erscheint eine Hinweismeldung, die darauf aufmerksam macht, dass noch eine Sphäre fehlt. Erst wenn alle drei Sphären eingesammelt wurden, lässt sich die Tür öffnen und das Level erfolgreich abschließen. Beim Durschreiten der Tür Erscheint ein Victory-Screen.</p>
+          <div class="project-body-media-single"> <video src="../assets/Door.mp4" autoplay loop muted playsinline></video> </div>
+
 
         <h3>Umgesetzte Features</h3>
         <ul>
           <li>Health-System mit UI-basierter Health Bar</li>
-          <li>Trigger-basierter Schaden durch Kollision mit Gegnerobjekten</li>
-          <li>Spieler-Feedback über Text-Meldungen und HUD</li>
-          <li>Sieg- und Verlustbildschirme mit Navigationsoptionen</li>
+          <li>Schaden durch Kollision/Overlap mit Gegnerobjekten</li>
+          <li>Feedback über Text-Meldungen und HUD</li>
+          <li>Game-Over und Victory Screen mit Restart und Quit Optionen</li>
           <li>Bewegliche Plattformen und Hindernisse mit Timelines</li>
-          <li>Objektbasierte Interaktion zur Türöffnung basierend auf eingesammelten Sphären</li>
+          <li>Interaktion zur Türöffnung abhängig von eingesammelten Sphären</li>
           <li>Verwendung des Unreal Starter Contents für visuelle Effekte</li>
         </ul>
 
         <h3>Reflektion</h3>
         <p>
-          Auch wenn dieses Projekt inhaltlich stark vom Kurs vorgegeben war, konnte ich die einzelnen Mechaniken vertiefen, modifizieren und verstehen. Es diente mir als wichtige Grundlage für eigene Spielideen und half mir dabei, mich mit Blueprints, Event Handling und UI-Logik in Unreal vertraut zu machen. Gerade der strukturierte Aufbau und das wiederholte Testing kleiner Elemente waren hier entscheidend für meinen Lernerfolg.
+          Trotz der klaren Vorgaben im Kurs konnte ich beim Umsetzen der Mechaniken viel über ihre Funktionsweise lernen und sie an verschiedenen Stellen sinnvoll anpassen oder erweitern. Das Projekt wurde dadurch zu einer wertvollen Basis für eigene Ideen – und hat mir geholfen, die Arbeit mit Blueprints, Events und UI-Elementen in Unreal wirklich zu verinnerlichen. Der klare Aufbau und das wiederholte Ausprobieren im Detail haben mir dabei besonders weitergeholfen.
         </p>
       </div>
     </div>
