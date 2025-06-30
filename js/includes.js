@@ -25,15 +25,24 @@ async function includeHTML() {
 }
 
 // ------------------------
-// Sprachumschaltung: Getrennte JSON pro Seite und Sprache
+// Sprachumschaltung: Globale & seitenbasierte JSON pro Sprache
 // ------------------------
-function getLanguageFile(lang) {
-  // Erkennung der aktuellen Seite & Ordnerstruktur
+
+function getJsonPrefix() {
+  // Prüfe, ob wir im /projects/ Unterordner sind
+  return window.location.pathname.includes('/projects/') ? "../" : "";
+}
+
+function getGlobalLanguageFile(lang) {
+  const prefix = getJsonPrefix();
+  return `${prefix}json/global-${lang}.json`;
+}
+
+function getPageLanguageFile(lang) {
   let page = "index";
   const path = window.location.pathname;
-  let prefix = "";
+  const prefix = getJsonPrefix();
   if (path.includes("/projects/")) {
-    prefix = "../";
     const match = path.match(/projects\/([a-zA-Z0-9\-_]+)\.html/);
     if (match && match[1]) page = match[1];
     else page = "projects";
@@ -42,27 +51,40 @@ function getLanguageFile(lang) {
   return `${prefix}json/${page}-${lang}.json`;
 }
 
+// Lese "lang" aus URL, ansonsten aus localStorage
+function getLangFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('lang');
+}
+
 function setLanguage(lang) {
-  fetch(getLanguageFile(lang))
-    .then(resp => resp.json())
-    .then(data => {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (data[key]) el.innerHTML = data[key];
-      });
-      document.querySelectorAll('.lang-btn, .lang-btn-radio').forEach(btn => btn.classList.remove('active'));
-      if (lang === 'de') document.getElementById('lang-de')?.classList.add('active');
-      if (lang === 'en') document.getElementById('lang-en')?.classList.add('active');
-      localStorage.setItem('language', lang);
+  Promise.all([
+    fetch(getGlobalLanguageFile(lang)).then(r => r.json()),
+    fetch(getPageLanguageFile(lang)).then(r => r.json())
+  ]).then(([globalData, pageData]) => {
+    const data = Object.assign({}, globalData, pageData); // Seitenspezifisches überschreibt globales
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (data[key]) el.innerHTML = data[key];
     });
+    document.querySelectorAll('.lang-btn, .lang-btn-radio').forEach(btn => btn.classList.remove('active'));
+    if (lang === 'de') document.getElementById('lang-de')?.classList.add('active');
+    if (lang === 'en') document.getElementById('lang-en')?.classList.add('active');
+    localStorage.setItem('language', lang);
+
+    // URL anpassen ohne Reload:
+    const url = new URL(window.location);
+    url.searchParams.set('lang', lang);
+    window.history.replaceState({}, '', url);
+  });
 }
 
 function initLanguageToggle() {
-  // Sprache aus localStorage oder Default wählen
-  const defaultLang = localStorage.getItem('language') || 'de';
+  const urlLang = getLangFromUrl();
+  const storedLang = localStorage.getItem('language');
+  const defaultLang = urlLang || storedLang || 'de';
   setLanguage(defaultLang);
 
-  // Listener für Language-Buttons (nach dynamischem Header-Laden)
   document.getElementById('lang-de')?.addEventListener('click', () => setLanguage('de'));
   document.getElementById('lang-en')?.addEventListener('click', () => setLanguage('en'));
 }
