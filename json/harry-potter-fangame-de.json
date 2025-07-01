@@ -1,0 +1,42 @@
+{
+  "project_role": "Solo-Entwickler",
+  "about_project": "Über das Projekt",
+  "about_intro": "Nachbau bekannter Mechaniken aus „Harry Potter und die Kammer des Schreckens“ – mit modernen Effekten und eigener Umsetzung in Unreal Engine 5.",
+  "project_info": "Projektinfo",
+  "role_label": "Rolle:",
+  "type_label": "Projektart:",
+  "project_type": "Lernprojekt",
+  "status_label": "Status:",
+  "project_status": "Prototyp",
+
+  "learning_goals_head": "Lernziele und Motivation",
+  "learning_goals": "Dieses Projekt war mein erster eigener, selbstständig entwickelter Prototyp in Unreal Engine 5. Um mir den Einstieg zu erleichtern, habe ich mich dazu entschieden, zentrale Mechaniken aus „Harry Potter und die Kammer des Schreckens“ (PC) nachzubauen – einem Spiel, das mich in meiner Kindheit stark geprägt hat. Die klare Struktur des Originals bot mir einen guten Rahmen, um klassische Gameplay-Elemente wie Zauberinteraktionen, Türmechaniken und einfache Logiksysteme mit modernen Mitteln und eigener Umsetzung neu zu adaptieren.",
+
+  "spells_head": "Umgesetzte Zauber-Mechaniken",
+  "spongify_head": "Spongify",
+  "spongify_text": "Spongify verwandelt einen Teppich in ein Sprungpad. Wenn der Spieler auf den Teppich springt, wird er nach oben katapultiert.",
+
+  "flipendo_head": "Flipendo",
+  "flipendo_text": "Flipendo stößt Objekte und Gegner weg. Sobald der Zauber ein Ziel trifft, wird dieses nach hinten gestoßen.",
+
+  "diffindo_head": "Diffindo",
+  "diffindo_text": "Diffindo löst Blockaden wie Äste oder Ranken auf. Das Auflösen des Objekts wird mithilfe eines Niagara-Effekts visuell dargestellt.",
+
+  "alohomora_head": "Alohomora",
+  "alohomora_text": "Alohomora öffnet Türen. Sobald der Zauber die Tür trifft, öffnet sie sich und schließt sich nach kurzer Zeit automatisch wieder. Die Animation erfolgt mithilfe einer Timeline.",
+
+  "rictumsempra_head": "Rictumsempra",
+  "rictumsempra_text": "Rictumsempra kann auf Gegner angewendet werden. Trifft der Zauber, wird der Gegner kurzzeitig außer Gefecht gesetzt. Anschließend kann Flipendo eingesetzt werden, um ihn weiter nach hinten zu stoßen. Die Bewegung wird dabei mithilfe einer Timeline und eines Vector Lerp realisiert.",
+
+  "interact_head": "Interaktions- und Zaubersystem",
+  "interact_wand": "Das Zaubersystem kombiniert visuelle Effekte, Benutzerinteraktion und modulare Logik. Hält der Spieler die linke Maustaste gedrückt, hebt der Charakter den Arm, um einen Zauber zu wirken – beim Loslassen wird dieser automatisch ausgelöst.",
+  "interact_spell_fx": "Der visuelle Zaubereffekt wird mithilfe von Niagara erzeugt: Ein farbiger Effekt wird in zufälliger Form vom Zauberstab bis zum getroffenen Objekt dargestellt und passt sich dabei dem jeweils gewählten Zauber an.",
+  "interact_crosshair": "Um das Zielen zu erleichtern, gibt es ein einfaches Crosshair in der Mitte des Bildschirms. Getroffen wird jeweils das Objekt, das per Line Trace vom Kamerapunkt aus erfasst wird.",
+  "interact_system": "Jedes Objekt, das auf einen Zauber reagieren kann, verfügt über ein eigenes Interface. Darüber wird zentral gesteuert, wie es sich bei einem bestimmten Zaubertyp verhält – so bleibt das System modular, erweiterbar und gut wartbar.",
+
+  "tech_head": "Technischer Aufbau",
+  "tech_text": "Als Basis diente das Third Person Template von Unreal Engine 5. Um mein Verständnis für die Engine weiter zu vertiefen und den Fokus gezielt auf die verschiedenen Prinzipien und Werkzeuge von Unreal zu legen, habe ich das gesamte Projekt ausschließlich mit Blueprints umgesetzt. Dabei habe ich versucht, die einzelnen Mechaniken möglichst flexibel und erweiterbar zu gestalten, sodass ich sie in zukünftige Projekte übertragen kann. Die visuellen Effekte wurden mit Niagara realisiert, Bewegungsabläufe wie das Öffnen von Türen mithilfe von Timelines gesteuert. Interaktionen basieren auf Interfaces, sodass Zauber unabhängig vom konkreten Objekt flexibel eingesetzt werden können. Für die visuelle Gestaltung nutzte ich zusätzlich Assets und Materialien aus der Quixel Megascans-Bibliothek. Schritt für Schritt habe ich das System entlang konkreter Anforderungen aufgebaut und mein Wissen durch Tutorials und praktische Anwendung kontinuierlich erweitert.",
+
+  "reflection_head": "Fazit",
+  "reflection_text": "Das Projekt war für mich ein weiterer wichtiger Schritt beim Einstieg in die Arbeit mit der Unreal Engine 5. Da mein Fokus auf dem Lernfortschritt lag, hat mir die Nachbildung zentraler Mechaniken des Originalspiels dabei geholfen, mein technisches Verständnis gezielt zu vertiefen.<br><br> Im Verlauf der Entwicklung bin ich jedoch auch auf technische Herausforderungen gestoßen – insbesondere bei Mechaniken, die ein physikalisch korrektes Verhalten von Objekten erforderten. Ich hatte zunächst versucht, diese mithilfe von Physik-Simulationen umzusetzen, bin dabei jedoch auf unerwartete Schwierigkeiten gestoßen, etwa unnatürliches Abrutschen oder unvorhersehbare Bewegungsabläufe.<br><br> Als pragmatische Lösung für diesen Prototyp habe ich mich daher entschieden, die Bewegungen mithilfe von Timelines und direkter Positionssteuerung umzusetzen. Auch wenn eine physikbasierte Lösung langfristig das realistischere Ergebnis liefern würde, war diese Herangehensweise für die Erstellung des Prototyps erstmal die zielführendere Variante.<br><br> Besonders motivierend war für mich zu sehen, wie aus einzelnen Mechaniken ein funktionierendes Ganzes entsteht – und wie ich dabei meine Herangehensweise systematisch weiterentwickeln konnte."
+}

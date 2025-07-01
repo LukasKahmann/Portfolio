@@ -1,7 +1,7 @@
 {
   "project_role": "Solo Developer",
   "about_project": "Über das Projekt",
-  "about_intro": "Im Rahmen meines Einstiegs ins Game Development mit Unreal Engine 5 habe ich den Udemy-Kurs 'The Complete Beginner’s Course' bearbeitet. Ziel war es, die Grundlagen von Game-Mechaniken durch ein eigenes kleines Puzzle-Game mit Blueprints zu erlernen. Im Projekt habe ich grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events sowie Sieg- und Niederlagenbedingungen umgesetzt – alles auf Basis des Third Person Templates von Unreal.",
+  "about_intro": "Im Rahmen meines Einstiegs ins Game Development habe ich den Udemy-Kurs 'Unreal Engine 5: The Complete Beginner’s Course' bearbeitet. Ziel war es, die Grundlagen von Unreal Engine durch ein kleines Puzzle-Game mit Blueprints kennenzulernen. Im Zuge des Projekts habe ich grundlegende Elemente wie Interaktion, UI, Kollision, Trigger-Events sowie Sieg- und Niederlagenbedingungen umgesetzt..",
   "project_info": "Projektinfo",
   "role_label": "Rolle:",
   "type_label": "Projekttyp:",
@@ -10,35 +10,35 @@
   "project_status": "Abgeschlossen",
 
   "learning_goals_head": "Lernziele & Hintergrund",
-  "learning_goals": "Dies war mein erstes Projekt in Unreal Engine 5. Ziel war es, die Struktur eines einfachen Spiels nachzuvollziehen, indem ich ein bestehendes Kursprojekt nachbaue – und zu verstehen, welche Bausteine notwendig sind, um ein kleines, aber funktionierendes Level zu erstellen. Dabei habe ich sowohl die Funktionsweise von Blueprints als auch das Arbeiten mit Game-Objekten, Kollisionen und Triggern kennengelernt.",
+  "learning_goals": "Mein Ziel für das erste Projekt in Unreal Engine 5 war es, ein strukturiertes, überschaubares Spiel zu entwickeln, indem ich ein Kursprojekt nachbaute und dabei Schritt für Schritt nachvollzog, wie ein funktionierender Level entsteht. Besonders wichtig war mir, den Umgang mit Blueprints sowie das Verständnis verschiedener Game-Mechaniken zu vertiefen.",
 
   "gameplay_head": "Gameplay",
-  "gameplay_intro": "Das Spielziel ist simpel: Der Spieler startet am Anfang eines linearen Gangs und muss eine verschlossene Tür am Ende erreichen. Die Tür öffnet sich jedoch nur, wenn vorher drei Kugeln eingesammelt wurden. Der Weg zur Tür ist durch verschiedene Hindernisse versperrt.",
+  "gameplay_intro": "Der Aufbau des Spiels ist bewusst simpel gehalten: Der Spieler startet am Anfang eines linearen Gangs und muss eine verschlossene Tür am Ende erreichen. Diese öffnet sich jedoch nur, wenn zuvor drei Kugeln eingesammelt wurden. Auf dem Weg dorthin begegnet der Spieler verschiedenen Hindernissen, die es zu überwinden gilt.",
 
   "fire_barrier_head": "Feuerbarriere",
-  "fire_barrier_text": "Die Barriere verursacht beim Berühren Schaden und soll den Spieler dazu anregen, das Hindernis über eine Treppe zu umgehen. Beim Überqueren sammelt der Spieler die erste Schlüsselkugel ein. Der Feuereffekt wurde mit Assets aus dem Unreal Starter Content realisiert.",
+  "fire_barrier_text": "Die Barriere verursacht bei Berührung Schaden und soll den Spieler dazu motivieren, das Hindernis mithilfe einer Treppe zu überqueren. Beim Überqueren dieses Abschnitts sammelt der Spieler automatisch die erste Schlüsselkugel ein. Der visuelle Feuereffekt wurde mithilfe von Assets aus dem Unreal Starter Content umgesetzt.",
 
   "platforms_head": "Schwebende Plattformen",
-  "platforms_text": "Vertikal bewegliche Plattformen ermöglichen es dem Spieler, eine Lücke zu überwinden und die zweite Schlüsselkugel zu sammeln. Ein Sturz in die Lücke führt zum Tod.",
+  "platforms_text": "Vertikal bewegliche Plattformen ermöglichen es dem Spieler, eine Lücke zu überwinden und die zweite Schlüsselkugel zu sammeln. Ein Sturz in den Abgrund führt zum Tod.",
 
   "enemy_spheres_head": "Feindliche Kugeln",
   "enemy_spheres_text": "Kugeln patrouillieren auf engen Passagen und blockieren den Weg des Spielers. Bei Berührung verursachen sie Schaden.",
 
   "game_over_head": "Game Over",
-  "game_over_text": "Sinkt die Lebensenergie auf Null oder fällt der Spieler in die Lücke, endet das Spiel. Ein Game-Over-Bildschirm erscheint, auf dem man neu starten oder beenden kann.",
+  "game_over_text": "Sinkt die Lebensenergie auf Null oder fällt der Spieler in den Abgrund, endet das Spiel. Ein Game-Over-Screen erscheint, auf dem man neu starten oder beenden kann.",
 
   "door_head": "Verschlossene Tür",
-  "door_text": "Am Ende des Levels steht eine Tür, die sich nur öffnet, wenn alle drei Kugeln eingesammelt wurden. Die dritte Kugel befindet sich in einem der vier identischen Häuser auf dem Weg. Versucht man, die Tür ohne alle Kugeln zu öffnen, erscheint ein Hinweis. Erst mit allen drei Kugeln kann die Tür geöffnet und das Level abgeschlossen werden. Nach dem Durchgang erscheint ein Sieg-Bildschirm.",
+  "door_text": "Am Ende des Levels steht eine Tür, die sich nur öffnet, wenn alle drei Kugeln eingesammelt wurden. Die dritte Kugel befindet sich in einem der vier identischen Häuser auf dem Weg. Versucht man, die Tür ohne alle Kugeln zu öffnen, erscheint ein Hinweis. Erst mit allen drei Kugeln kann die Tür geöffnet und das Level abgeschlossen werden. Nach dem Durchgang erscheint ein Vicotry-Screen.",
 
   "features_head": "Umgesetzte Features",
   "feature1": "Health-System mit UI-basierter Lebensanzeige",
-  "feature2": "Schadensberechnung bei Kollision mit Gegnerobjekten",
+  "feature2": "Schadens bei Kollision mit Gegnerobjekten",
   "feature3": "Feedback über Textnachrichten und HUD",
-  "feature4": "Game-Over- und Sieg-Bildschirm mit Neustart-/Beenden-Option",
+  "feature4": "Game-Over- und Victory-Screenb mit Neustart-/Beenden-Option",
   "feature5": "Bewegliche Plattformen und Hindernisse via Timelines",
-  "feature6": "Interaktion zum Öffnen der Tür je nach gesammelten Kugeln",
+  "feature6": "Interaktion zum Öffnen der Tür in Verbindung mit einer Bedingung",
   "feature7": "Verwendung von Unreal Starter Content für Effekte",
 
   "reflection_head": "Reflexion",
-  "reflection_text": "Trotz der klaren Kurs-Vorgaben habe ich viel gelernt, indem ich Mechaniken eigenständig umgesetzt und angepasst habe. Das Projekt war eine wertvolle Grundlage für eigene Ideen – und hat geholfen, das Arbeiten mit Blueprints, Events und UI-Elementen in Unreal wirklich zu verinnerlichen. Die klare Struktur und das wiederholte Testen waren dabei besonders hilfreich."
+  "reflection_text": "Trotz der klaren Kurs-Vorgaben habe ich viel gelernt, indem ich Mechaniken eigenständig umgesetzt und angepasst habe. Das Projekt war eine wertvolle Grundlage für eigene Ideen – und hat geholfen, das Arbeiten mit Blueprints, Events und UI-Elementen in Unreal zu verstehen. Die klare Struktur und das wiederholte Testen waren dabei besonders hilfreich."
 }

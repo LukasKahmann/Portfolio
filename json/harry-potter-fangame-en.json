@@ -1,0 +1,40 @@
+{
+  "project_role": "Solo Developer",
+  "about_project": "About the Project",
+  "about_intro": "Remake of key mechanics from 'Harry Potter and the Chamber of Secrets' – with modern effects and my own implementation in Unreal Engine 5",
+  "project_info": "Project Info",
+  "role_label": "Role:",
+  "type_label": "Project Type:",
+  "project_type": "Learning Project",
+  "status_label": "Status:",
+  "project_status": "Prototype",
+
+  "learning_goals_head": "Learning Goals & Motivation",
+  "learning_goals": "This project marks my first fully independently developed prototype in Unreal Engine 5. I recreated core mechanics from 'Harry Potter and the Chamber of Secrets' (PC) to modernize classic gameplay elements like spell interactions, door mechanics, and logic systems – entirely using Blueprints. My goal was to get comfortable with prototyping, Blueprints, and iterative development.",
+
+  "spells_head": "Implemented Spell Mechanics",
+  "spongify_head": "Spongify (Bouncing Carpet)",
+  "spongify_text": "After interaction, a carpet transforms into a jump pad. The player is dynamically catapulted upwards when jumping on it.",
+  "flipendo_head": "Flipendo (Knockback Spell)",
+  "flipendo_text": "Pushes objects away or activates switches. Implemented using Line Trace and Niagara visualization.",
+  "diffindo_head": "Diffindo (Cutting Spell)",
+  "diffindo_text": "Visually dissolves blockages or ropes. Uses Niagara emitter and a dissolving material.",
+  "alohomora_head": "Alohomora (Unlocking Doors)",
+  "alohomora_text": "Opens doors that rotate around a central axis. Doors can automatically close or stay open. Animated using Timeline.",
+  "sectumsempra_head": "Sectumsempra (Object Reaction)",
+  "sectumsempra_text": "Hits a crab asset, which then tumbles and is temporarily helpless. Controlled using velocity impulses and state recognition.",
+
+  "interact_head": "Interaction & Spell System",
+  "interact_wand": "Wand animation: Character raises arm when casting.",
+  "interact_spell_fx": "Visual spell effect using Niagara, depending on the selected spell.",
+  "interact_crosshair": "Crosshair aiming system for precise interactions via line trace.",
+  "interact_system": "Modular spell and interaction system: Each object has an interface and reacts individually.",
+  "interact_widget": "UI widget appears when interacting above objects.",
+  "interact_coloreffect": "Spell effect color changes depending on the selected spell.",
+
+  "tech_head": "Technical Structure",
+  "tech_text": "Based on the Third Person Template from Unreal Engine 5. Everything was implemented exclusively using Blueprints. The structure is modular, allowing for mechanics to be reused. Visual effects created with Niagara, movement with Timelines, interaction via interfaces. Many assets from Quixel Megascans. Each mechanic was developed, tested, and improved iteratively.",
+
+  "reflection_head": "Reflection",
+  "reflection_text": "This project was an important step towards working independently with Unreal Engine. Without external specifications, I created a modular system of classic game mechanics – with a focus on learning progress, technical understanding, and reusability. It was especially motivating to see individual mechanics come together to form a functional whole."
+}
