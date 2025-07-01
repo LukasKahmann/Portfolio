@@ -1,7 +1,7 @@
 {
   "project_role": "Solo Developer",
   "about_project": "About the Project",
-  "about_intro": "Remake of key mechanics from 'Harry Potter and the Chamber of Secrets' – with modern effects and my own implementation in Unreal Engine 5",
+  "about_intro": "Recreation of familiar mechanics from “Harry Potter and the Chamber of Secrets” – with modern effects and my own implementation in Unreal Engine 5.",
   "project_info": "Project Info",
   "role_label": "Role:",
   "type_label": "Project Type:",
@@ -10,31 +10,35 @@
   "project_status": "Prototype",
 
   "learning_goals_head": "Learning Goals & Motivation",
-  "learning_goals": "This project marks my first fully independently developed prototype in Unreal Engine 5. I recreated core mechanics from 'Harry Potter and the Chamber of Secrets' (PC) to modernize classic gameplay elements like spell interactions, door mechanics, and logic systems – entirely using Blueprints. My goal was to get comfortable with prototyping, Blueprints, and iterative development.",
+  "learning_goals": "This project was my very first, independently developed prototype in Unreal Engine 5. To make the start easier, I decided to recreate core mechanics from “Harry Potter and the Chamber of Secrets” (PC) – a game that inspired me in my childhood. The clear structure of the original provided a solid framework for me to adapt classic gameplay elements like spell interactions, door mechanics, and simple logic systems with modern means and my own approach.",
 
   "spells_head": "Implemented Spell Mechanics",
-  "spongify_head": "Spongify (Bouncing Carpet)",
-  "spongify_text": "After interaction, a carpet transforms into a jump pad. The player is dynamically catapulted upwards when jumping on it.",
-  "flipendo_head": "Flipendo (Knockback Spell)",
-  "flipendo_text": "Pushes objects away or activates switches. Implemented using Line Trace and Niagara visualization.",
-  "diffindo_head": "Diffindo (Cutting Spell)",
-  "diffindo_text": "Visually dissolves blockages or ropes. Uses Niagara emitter and a dissolving material.",
-  "alohomora_head": "Alohomora (Unlocking Doors)",
-  "alohomora_text": "Opens doors that rotate around a central axis. Doors can automatically close or stay open. Animated using Timeline.",
-  "sectumsempra_head": "Sectumsempra (Object Reaction)",
-  "sectumsempra_text": "Hits a crab asset, which then tumbles and is temporarily helpless. Controlled using velocity impulses and state recognition.",
+  "spongify_head": "Spongify",
+  "spongify_text": "Spongify transforms a carpet into a jump pad. When the player jumps onto the carpet, they are catapulted upward.",
 
-  "interact_head": "Interaction & Spell System",
-  "interact_wand": "Wand animation: Character raises arm when casting.",
-  "interact_spell_fx": "Visual spell effect using Niagara, depending on the selected spell.",
-  "interact_crosshair": "Crosshair aiming system for precise interactions via line trace.",
-  "interact_system": "Modular spell and interaction system: Each object has an interface and reacts individually.",
-  "interact_widget": "UI widget appears when interacting above objects.",
-  "interact_coloreffect": "Spell effect color changes depending on the selected spell.",
+  "flipendo_head": "Flipendo",
+  "flipendo_text": "Flipendo pushes objects and enemies away. As soon as the spell hits a target, it is pushed back.",
+
+  "diffindo_head": "Diffindo",
+  "diffindo_text": "Diffindo dissolves blockages such as branches or vines. The dissolving of the object is visually represented with a Niagara effect.",
+
+  "alohomora_head": "Alohomora",
+  "alohomora_text": "Alohomora opens doors. As soon as the spell hits the door, it opens and then closes automatically after a short time. The animation is realized using a Timeline.",
+
+  "rictumsempra_head": "Rictumsempra",
+  "rictumsempra_text": "Rictumsempra can be applied to enemies. If the spell hits, the enemy is briefly disabled. Afterwards, Flipendo can be used to push them further back. The movement is realized with a Timeline and a Vector Lerp.",
+
+  "interact_head": "Interaction and Spell System",
+  "interact_wand": "The spell system combines visual effects, user interaction, and modular logic. When the player holds down the left mouse button, the character raises their arm to cast a spell – releasing it triggers the spell automatically.",
+  "interact_spell_fx": "The visual spell effect is created with Niagara: A colored effect is randomly generated from the wand to the hit object and adapts to the currently selected spell.",
+  "interact_crosshair": "To make aiming easier, there is a simple crosshair in the center of the screen. The object hit is determined by a line trace from the camera point.",
+  "interact_system": "Every object that can react to a spell has its own interface. This centrally controls how it behaves for each spell type – so the system remains modular, extendable, and maintainable.",
+  "interact_widget": "UI widget appears when interacting over objects.",
+  "interact_coloreffect": "Color changes of the spell effect depending on the object hit.",
 
   "tech_head": "Technical Structure",
-  "tech_text": "Based on the Third Person Template from Unreal Engine 5. Everything was implemented exclusively using Blueprints. The structure is modular, allowing for mechanics to be reused. Visual effects created with Niagara, movement with Timelines, interaction via interfaces. Many assets from Quixel Megascans. Each mechanic was developed, tested, and improved iteratively.",
+  "tech_text": "The project was based on the Third Person Template of Unreal Engine 5. To deepen my understanding of the engine and focus on Unreal’s various principles and tools, I implemented the entire project using Blueprints only. I tried to design the individual mechanics as flexibly and extendably as possible so I could reuse them in future projects. The visual effects were realized with Niagara; movement flows like opening doors were controlled via Timelines. Interactions are based on interfaces so that spells can be applied flexibly, regardless of the specific object. For the visuals, I also used assets and materials from the Quixel Megascans library. Step by step, I built the system according to concrete requirements and continuously expanded my knowledge through tutorials and practical application.",
 
   "reflection_head": "Reflection",
-  "reflection_text": "This project was an important step towards working independently with Unreal Engine. Without external specifications, I created a modular system of classic game mechanics – with a focus on learning progress, technical understanding, and reusability. It was especially motivating to see individual mechanics come together to form a functional whole."
+  "reflection_text": "This project was another important step for me in getting started with Unreal Engine 5. Since my focus was on learning progress, recreating the core mechanics of the original game helped me to deepen my technical understanding.<br><br> During development, I also encountered technical challenges – especially with mechanics that required physically correct object behavior. Initially, I tried to implement these using physics simulations, but I ran into unexpected issues such as unnatural sliding or unpredictable motion.<br><br> As a pragmatic solution for this prototype, I decided to implement the movements using Timelines and direct position control. Even though a physics-based solution would ultimately deliver more realistic results, this approach was the most effective for creating the prototype.<br><br> It was especially motivating to see how a functional system emerged from individual mechanics – and how I was able to systematically refine my own workflow in the process."
 }
