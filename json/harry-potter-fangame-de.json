@@ -7,7 +7,7 @@
   "type_label": "Projektart:",
   "project_type": "Lernprojekt",
   "status_label": "Status:",
-  "project_status": "Prototyp",
+  "project_status": "Prototyp",  
 
   "learning_goals_head": "Lernziele und Motivation",
   "learning_goals": "Dieses Projekt war mein erster eigener, selbstständig entwickelter Prototyp in Unreal Engine 5. Um mir den Einstieg zu erleichtern, habe ich mich dazu entschieden, zentrale Mechaniken aus „Harry Potter und die Kammer des Schreckens“ (PC) nachzubauen – einem Spiel, das mich in meiner Kindheit stark geprägt hat. Die klare Struktur des Originals bot mir einen guten Rahmen, um klassische Gameplay-Elemente wie Zauberinteraktionen, Türmechaniken und einfache Logiksysteme mit modernen Mitteln und eigener Umsetzung neu zu adaptieren.",

@@ -1,0 +1,35 @@
+{
+  "project_meta": "Teamarbeit • Konzept, UX/UI, Prototyping",
+  "about_head": "Über das Projekt",
+  "about_intro": "Home for Moles entstand im Rahmen des Hochschulkurses „Mensch-Computer-Interaktion“ während meines Informatikstudiums. Ziel des Kurses war es, in einem Team eine interaktive App zu entwickeln, die ein realitätsnahes Alltagsproblem adressiert – ohne wirtschaftliche Zielsetzung, aber mit klarer gesellschaftlicher Relevanz. Der Fokus lag auf Konzept, Benutzerführung und der prototypischen Umsetzung einer funktionalen Lösung.",
+  "project_info": "Projektinfo",
+  "type_label": "Projektart:",
+  "project_type": "Studienprojekt",
+  "role_label": "Rolle:",
+  "project_role": "Teamarbeit",
+  "tool_label": "Tool:",
+  "project_tool": "Figma",
+  "status_label": "Status:",
+  "project_status": "Prototyp",
+
+  "desc_head": "Kurzbeschreibung",
+  "desc_text": "Im Rahmen des Kurses „Mensch-Computer-Interaktion“ war es unsere Aufgabe, in einer Gruppe einen interaktiven Prototypen zu entwerfen, der ein konkretes und realitätsnahes Problem des Alltags adressiert – ohne dabei kommerzielle Interessen zu verfolgen.<br>Unsere Lösung: Home for Moles, eine App, die dabei hilft, mit Maulwürfen im heimischen Garten respektvoll, tierfreundlich und lösungsorientiert umzugehen – über Aufklärung, Unterstützung und direkte Koordinierung von Umsiedlungsmaßnahmen.",
+
+  "background_head": "Hintergrund & Idee",
+  "background_text": "Viele Menschen empfinden Maulwürfe als störend – etwa durch aufgeworfene Erdhügel im Garten. Klassische Methoden zur Bekämpfung sind oft ineffektiv oder schädlich für die Tiere.<br>Mit Home4Moles wollten wir eine Plattform schaffen, die Aufklärung bietet, Hilfe organisiert und ein bewusstes Umdenken fördert. Die App ermöglicht es, ein akutes Maulwurfproblem zu melden, Informationen zu erhalten oder selbst aktiv zu werden – z. B. als Maulwurfpate, der seinen Garten für eine Umsiedlung zur Verfügung stellt.",
+
+  "features_head": "Features des Prototyps",
+  "feature_nav": "Startseite & Navigation: Klare Struktur und intuitive Benutzerführung",
+  "feature_report": "Problemmeldung: Formular mit Fragen zur konkreten Situation (Ort, Anzahl, bereits gefangen usw.)",
+  "feature_booking": "Terminbuchung: Möglichkeit, Hilfe zur Umsiedlung direkt anzufragen",
+  "feature_info": "Infobereich: Wissenswertes über Maulwürfe, Verhalten, Schutzstatus",
+  "feature_patron": "Patenfunktion: Registrierung als Maulwurfpate mit Übersicht aktueller Umsiedlungsorte",
+  "feature_contact": "FAQ & Kontakt: Option, eigene Fragen zu stellen oder Unterstützung anzufordern",
+
+  "role_head": "Rolle & Umsetzung",
+  "role_text": "Ich war direkt an der Konzeptionsphase beteiligt und habe gemeinsam im Team die Struktur und Funktionsweise der App mitentwickelt.<br>Besonders habe ich mich auf die Ausarbeitung des klickbaren UI-Prototyps in Figma konzentriert – vom Wireframe bis zur interaktiven Navigation.",
+
+  "prototype_head": "Prototyp",
+  "reflection_head": "Fazit",
+  "reflection_text": "Das Projekt hat mir wichtige Einblicke in benutzerzentrierte Gestaltung und UI-Prototyping gegeben.<br>Besonders der kreative Prozess, ein reales Problem strukturiert zu analysieren, Lösungsideen zu entwickeln und schließlich mit Figma ein funktionierendes, bedienbares System zu entwerfen, hat mir großen Spaß gemacht.<br>Ich konnte sowohl gestalterisch als auch konzeptionell viel lernen – und den Mehrwert erleben, den gute Nutzerführung bei digitalen Produkten leisten kann."
+}

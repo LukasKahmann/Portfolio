@@ -1,0 +1,35 @@
+{
+  "project_meta": "Teamwork • Concept, UX/UI, Prototyping",
+  "about_head": "About the Project",
+  "about_intro": "Home for Moles was created as part of the university course \"Human-Computer Interaction\" during my computer science studies. The aim of the course was to develop an interactive app in a team that addresses a real-life everyday problem – with no commercial objectives, but with clear social relevance. The focus was on concept, user guidance, and the prototypical implementation of a functional solution.",
+  "project_info": "Project Info",
+  "type_label": "Project Type:",
+  "project_type": "Study Project",
+  "role_label": "Role:",
+  "project_role": "Teamwork",
+  "tool_label": "Tool:",
+  "project_tool": "Figma",
+  "status_label": "Status:",
+  "project_status": "Prototype",
+
+  "desc_head": "Short Description",
+  "desc_text": "As part of the \"Human-Computer Interaction\" course, our task was to design an interactive prototype in a group that addresses a concrete and real-world everyday problem – without pursuing commercial interests.<br>Our solution: Home for Moles, an app that helps to deal with moles in your own garden in a respectful, animal-friendly, and solution-oriented way – through information, support, and direct coordination of relocation measures.",
+
+  "background_head": "Background & Idea",
+  "background_text": "Many people consider moles to be a nuisance – for example, because of molehills in the garden. Traditional control methods are often ineffective or harmful to the animals.<br>With Home4Moles, we wanted to create a platform that provides education, organizes help, and promotes a conscious change in thinking. The app allows users to report an acute mole problem, obtain information, or become active themselves – e.g., as a mole patron who offers their garden for a relocation.",
+
+  "features_head": "Prototype Features",
+  "feature_nav": "Home & Navigation: Clear structure and intuitive user guidance",
+  "feature_report": "Problem Report: Form with questions about the specific situation (location, number, already caught, etc.)",
+  "feature_booking": "Appointment Booking: Option to directly request help for relocation",
+  "feature_info": "Info Section: Knowledge about moles, behavior, protection status",
+  "feature_patron": "Patron Function: Register as a mole patron with an overview of current relocation sites",
+  "feature_contact": "FAQ & Contact: Option to ask your own questions or request support",
+
+  "role_head": "Role & Implementation",
+  "role_text": "I was directly involved in the conceptual phase and, together with the team, helped develop the structure and functionality of the app.<br>I focused especially on creating the clickable UI prototype in Figma – from wireframes to interactive navigation.",
+
+  "prototype_head": "Prototype",
+  "reflection_head": "Reflection",
+  "reflection_text": "The project gave me important insights into user-centered design and UI prototyping.<br>In particular, the creative process of systematically analyzing a real problem, developing solution ideas, and finally designing a functional, usable system with Figma was a lot of fun.<br>I was able to learn a lot both creatively and conceptually – and to experience the value that good user guidance can bring to digital products."
+}
