@@ -1,0 +1,69 @@
+{
+  "project_title": "Unseen Labyrinth",
+  "project_role": "",
+  "about_project": "Kurzbeschreibung",
+  "about_intro_line1": "Unseen Labyrinth ist ein strategisches, kartenbasiertes Puzzle-Adventure, das taktische Bewegung mit Ressourcenmanagement verbindet...",
+  "about_intro_line2": "Als Ritter begibt man sich in ein geheimnisvolles, von Nebel durchzogenes Labyrinth...",
+  "project_info": "Projektinfo",
+  "jam_line": "Game-Jam-Prototyp inspiriert vom Brettspiel Labyrinth · Jam: itch.io · Druid Mechanics Community · Thema: What You Don’t See",
+  "team_line": "Team: 3 Mitglieder",
+  "engine_line": "Engine: Unreal Engine 5",
+
+  "flow_head": "Spielablauf",
+  "flow_text": "Ein Zug verläuft in drei Phasen ...",
+
+  "grid_head": "Labyrinth- & Grid-System",
+  "grid_text": "Das Spielfeld ist ein 10×10-Grid ...",
+
+  "tiles_head": "Tiles & Sichtbarkeit (Fog of War)",
+  "tiles_text": "Die Tile-Typen orientieren sich am Brettspiel ...",
+  "tiles_caption": "Screenshot-Platzhalter: Fog vs. aufgedeckte Tiles",
+
+  "cards_head": "Kartensystem",
+  "cards_text1": "Die Karten sind schlicht gestaltet...",
+  "cards_text2": "Das Kartensystem erlaubt dem Spieler gezielte Eingriffe...",
+  "cards_types": "Im Scope des Game Jams kamen die folgenden Typen zum Einsatz: Reveal, Shift, Switch, Jump, Rotate.",
+  "cards_caption": "Bild-Platzhalter: Kartenübersicht",
+
+  "playcard_intro": "Karte ausspielen – so funktioniert’s: ...",
+  "playcard_video_caption": "Video-Platzhalter: Alle Kartenaktionen im Loop",
+
+  "uiux_head": "UI/UX",
+  "uiux_text": "Die Oberfläche orientiert sich an Spielen ...",
+  "uiux_hud_caption": "Screenshot-Platzhalter: Ingame-HUD Gesamtansicht",
+
+  "phases_text": "Phasenanzeige, Zugzähler & End Turn: ...",
+  "cards_ui_flow_text": "Karten-UI & Flow: ...",
+  "phases_caption": "Screenshot-Platzhalter: Header mit Phasenanzeige, Zugzähler, End Turn",
+  "cards_hand_caption": "Bild-Platzhalter: Kartenhand Zustände",
+  "cards_flow_video_caption": "Video-Platzhalter: Play → Top-Down → Auswahl → Confirm → zurück",
+
+  "cinematics_head": "Cinematics",
+  "cinematics_text": "Das Spiel enthält mehrere Cinematic-Screens ...",
+  "cinematics_start_caption": "Video-Platzhalter: Startmenü",
+  "cinematics_win_caption": "Video-Platzhalter: Win-Cinematic",
+  "cinematics_gameover_caption": "Video-Platzhalter: Game-Over-Cinematic",
+
+  "camera_head": "Kamera & Präsentation",
+  "camera_text": "Die Standardansicht blickt schräg von oben ...",
+
+  "audio_art_head": "Audio & Artstyle",
+  "audio_art_text": "Das Audio ist dezent ...",
+
+  "myrole_head": "Meine Rolle",
+  "myrole_text1": "Während des Projekts habe ich mich vor allem darauf konzentriert...",
+  "myrole_text2": "Ich habe die Systeme zunächst unabhängig voneinander umgesetzt...",
+  "myrole_text3": "Da unser Team sehr unterschiedliche Erfahrungsstände ...",
+  "myrole_text4": "Am Ende konnte ich erreichen...",
+
+  "reflection_head": "Reflexion",
+  "reflection_text1": "Während des Projekts hat sich die Entscheidung...",
+  "reflection_text2": "Die Zusammenarbeit im Team hat ...",
+  "reflection_text3": "Herausfordernd waren die unterschiedlichen ...",
+  "reflection_text4": "Nicht alles lief optimal...",
+
+  "summary_head": "Kompakte Kurzfassung",
+  "summary_text1": "Unseen Labyrinth ist ein rundenbasiertes Puzzle-Adventure ...",
+  "summary_text2": "Meine Rolle lag vor allem im Systems Design ...",
+  "summary_text3": "Das Projekt war für mich ein wichtiger Lernschritt ..."
+}
