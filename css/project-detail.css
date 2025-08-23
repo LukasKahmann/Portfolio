@@ -199,6 +199,25 @@
     padding: 0 5vw;
   }
 }
+.project-body-media-single-wide {
+  width: 80%;
+  height: 500;;
+  min-width: 600px;
+  max-width: 1200px;
+  margin: 36px auto 36px auto;
+  padding: 0 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-body-media-single-wide img,
+.project-body-media-single-wide video {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  background: #232323;
+}
 
 /* IFrame */
 project-iframe-wrap {
