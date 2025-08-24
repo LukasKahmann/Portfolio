@@ -261,3 +261,14 @@ project-iframe-wrap {
   margin-bottom: 0.4rem;      /* etwas Luft zwischen den Punkten */
   line-height: 1.4;           /* bessere Lesbarkeit */
 }
+
+.project-info-row .project-link {
+  color: #ffda5a;          /* deine Akzentfarbe (gleich wie Icons) */
+  text-decoration: underline;
+  margin-left: 0.25rem;    /* Abstand zwischen Icon und Text */
+}
+
+.project-info-row .project-link:hover {
+  color: #ffda5a;          /* bleibt gleich, kein Farbwechsel */
+  text-decoration: underline; /* bleibt gleich */
+}
