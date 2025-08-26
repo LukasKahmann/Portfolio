@@ -20,7 +20,7 @@ async function includeHTML() {
     footerEl.innerHTML = await resp.text();
   }
 
-  // Sprachumschaltung initialisieren (nachdem Header geladen wurde!)
+  // Sprachumschaltung initialisieren
   initLanguageToggle();
 }
 
@@ -82,7 +82,7 @@ function setLanguage(lang) {
 function initLanguageToggle() {
   const urlLang = getLangFromUrl();
   const storedLang = localStorage.getItem('language');
-  const defaultLang = urlLang || storedLang || 'de';
+  const defaultLang = urlLang || storedLang || 'en';
   setLanguage(defaultLang);
 
   document.getElementById('lang-de')?.addEventListener('click', () => setLanguage('de'));
@@ -90,7 +90,7 @@ function initLanguageToggle() {
 }
 
 // ------------------------------------
-// Scroll-Fade für Hero-Text (wie gehabt)
+// Scroll-Fade für Hero-Text
 // ------------------------------------
 document.addEventListener("scroll", function() {
   const heroTextBlocks = document.querySelectorAll(".projects-hero-text h1, .projects-hero-text p, .hero-content h1, .hero-content p");
