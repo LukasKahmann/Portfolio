@@ -356,10 +356,17 @@ project-iframe-wrap {
 }
 
 /* Card-Inhalt bleibt gleich */
-.collapsible-content {
-  display: none;
-  overflow: hidden;
-  transition: all 0.4s ease;
+.collapsible-content h3,
+.collapsible-content h4 {
+  color: #ffda5a;     /* gleiche Gelbfarbe wie sonst */
+  font-size: 1.5rem;  /* größer für h4 */
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.collapsible-content h3 {
+  font-size: 2rem;  /* noch größer für h3 */
 }
 
 .collapsible-section.active .collapsible-content {
