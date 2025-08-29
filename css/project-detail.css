@@ -323,3 +323,76 @@ project-iframe-wrap {
   font-size: 1.1rem;
   color: #ffda5a; /* gleiche Akzentfarbe wie deine Icons */
 }
+
+/* Collapsable Part */
+.collapsible-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.75rem;
+  font-size: 1.5rem;       /* größer gemacht */
+  font-weight: 700;        /* kräftiger */
+  background: linear-gradient(90deg, #ffda5a 0%, #cfdbd5 100%);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 0.75rem;
+  transition: filter 0.3s ease;
+}
+
+.collapsible-toggle:hover {
+  filter: brightness(1.05);
+}
+
+.collapsible-toggle i {
+  font-size: 2rem;  /* größerer Pfeil */
+  transition: transform 0.3s ease;
+}
+
+.collapsible-section.active .collapsible-toggle i {
+  transform: rotate(180deg);
+}
+
+/* Card-Inhalt bleibt gleich */
+.collapsible-content {
+  display: none;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.collapsible-section.active .collapsible-content {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+
+/* BackToTop */
+
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #ffda5a; /* Akzentfarbe Gelb */
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none; /* erst sichtbar, wenn man scrollt */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+  background-color: #ffd633;
+}
+
+
