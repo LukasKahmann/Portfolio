@@ -219,6 +219,22 @@
   background: #232323;
 }
 
+/* Portrait / schmale Screenshots */
+.project-body-media-portrait {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.project-body-media-portrait img {
+  max-width: 300px;   /* begrenzt die Breite für Discord-Screens */
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+
 /* IFrame */
 project-iframe-wrap {
     display: flex;
@@ -368,6 +384,10 @@ project-iframe-wrap {
 .collapsible-content h3 {
   font-size: 2rem;  /* noch größer für h3 */
 }
+.collapsible-content {
+  display: none;
+}
+
 
 .collapsible-section.active .collapsible-content {
   display: block;
@@ -400,6 +420,25 @@ project-iframe-wrap {
 #backToTop:hover {
   transform: scale(1.1);
   background-color: #ffd633;
+}
+
+/* Einheitliche Bullet-Points */
+.project-detail-body ul {
+  margin: 1em 0 1em 2.2em;
+  padding-left: 0;
+  list-style: disc;
+}
+
+.project-detail-body li {
+  font-size: var(--body-font-size);  /* gleiche Größe wie Fließtext */
+  line-height: 1.6;
+  color: var(--text-main);           /* Textfarbe wie normal */
+  margin-bottom: 0.6em;
+}
+
+.project-detail-body li::marker {
+  color: var(--accent);              /* nur der Punkt gelb */
+  font-size: calc(var(--body-font-size) * 1.3); /* Marker größer */
 }
 
 
